@@ -5,11 +5,11 @@ import Footer from './components/Footer';
 import ClientEffects from './components/ClientEffects';
 
 export const metadata: Metadata = {
-  title: 'Restaurant Revenue Consultant | Tamada Group — F&B Revenue Agency',
+  title: 'Georgian Restaurant Marketing Agency | Tamada Group — Revenue Strategy & Marketing',
   description:
-    'Tamada Group is an AI-powered F&B revenue agency. We doubled a hospitality group\'s revenue across 4 properties. Find where your restaurant is losing money — and fix it.',
+    'Tamada Group is the marketing agency built by and for Georgian restaurants in America. Revenue strategy, menu engineering, local SEO, social media, and paid advertising — designed for Georgian cuisine.',
   keywords:
-    'restaurant revenue consultant, F&B revenue agency, restaurant consulting, menu engineering, hospitality revenue',
+    'Georgian restaurant marketing, Georgian restaurant consulting, khachapuri restaurant, Georgian food marketing, supra event marketing, Georgian restaurant SEO',
 };
 
 export default function RootLayout({

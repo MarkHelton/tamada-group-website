@@ -5,9 +5,9 @@ import MenuEngineeringEffects from './MenuEngineeringEffects';
 export const metadata: Metadata = {
   title: 'AI Menu Engineering for Restaurants | Increase Average Check | Tamada Group',
   description:
-    'AI menu engineering that increases average check by up to 18%. Same methodology as top restaurant chains. Now available for independent operators.',
+    'AI menu engineering that increases average check by up to 18%. Same methodology as top restaurant chains. Now available for Georgian restaurants across America.',
   keywords:
-    'menu engineering, restaurant menu design, increase average check, menu psychology, AI menu optimization, restaurant profit optimization',
+    'menu engineering, Georgian menu engineering, khachapuri menu optimization, restaurant menu design, increase average check, menu psychology, AI menu optimization, Georgian restaurant profit optimization',
 };
 
 export default function MenuEngineeringPage() {
@@ -46,7 +46,7 @@ export default function MenuEngineeringPage() {
             </h1>
             <div className="hero-gold-line" />
             <p className="hero-subheadline">Every menu is a sales conversation. Most are saying the wrong things to the wrong people at the wrong price.</p>
-            <p className="hero-body">The same methodology used by chains generating billions in annual revenue is now available to independent operators. AI-powered analysis of your POS data, guest behavior, and menu psychology — translated into a menu that sells.</p>
+            <p className="hero-body">The same methodology used by chains generating billions in annual revenue is now available to Georgian restaurants across America. AI-powered analysis of your POS data, guest behavior, and menu psychology — positioning your khachapuri as the hero item, guiding guests from khinkali to chakapuli, and translating your menu into a sales instrument.</p>
             <div className="hero-ctas">
               <Link href="/contact" className="btn-primary">Engineer My Menu</Link>
               <a href="#process" className="btn-secondary">See The Process</a>
@@ -80,7 +80,7 @@ export default function MenuEngineeringPage() {
 
               <p>Consider this: chain restaurants spend between $200,000 and $500,000 on menu engineering per concept. They employ teams of behavioral psychologists, pricing strategists, and data scientists to optimize every element — from font choices to color theory to the exact dollar amount that triggers a psychological price threshold. They do this because it works. Because every point of average check improvement across hundreds of locations compounds into hundreds of millions in additional revenue.</p>
 
-              <p>Independent operators compete against these menus every day. Not with the same tools. Not with the same data. Not with the same understanding of how a menu actually functions as a sales instrument. Until now.</p>
+              <p>Georgian restaurant owners compete against these menus every day. Not with the same tools. Not with the same data. Not with the same understanding of how a menu actually functions as a sales instrument. Your khachapuri, khinkali, and lobiani deserve better than a menu that buries them. Until now.</p>
             </div>
 
             <div className="problem-insights reveal stagger-2">
@@ -275,11 +275,11 @@ export default function MenuEngineeringPage() {
 
               <p>Your customers do love it. We do not doubt that for a moment. They love your food, they love your hospitality, they love the experience of dining in your restaurant. And they will continue to love all of those things after menu engineering — because we do not change what you serve. We change how you present it.</p>
 
-              <p>Customer satisfaction and revenue optimization are not the same metric. They are not even measuring the same thing. Satisfaction measures whether guests enjoyed what they ordered. Optimization measures whether the menu guided them toward the items that generate the highest revenue and margin for your business while still delivering the experience they came for. A guest who orders a $24 pasta and loves it is satisfied. That same guest, guided by a better-structured menu, might order a $32 short rib that costs you $2 less to produce — and love it even more, because the dish is genuinely better. The guest wins. Your margin wins. That is not manipulation. That is alignment.</p>
+              <p>Customer satisfaction and revenue optimization are not the same metric. They are not even measuring the same thing. Satisfaction measures whether guests enjoyed what they ordered. Optimization measures whether the menu guided them toward the items that generate the highest revenue and margin for your business while still delivering the experience they came for. A guest who orders a $18 khinkali plate and loves it is satisfied. That same guest, guided by a better-structured menu, might order a $32 chakapuli served in a ketsi that costs you $2 less to produce — and love it even more, because the dish is genuinely better. The guest wins. Your margin wins. That is not manipulation. That is alignment.</p>
 
-              <p>The data tells a clear story. Across every restaurant we have analyzed, there are items on the menu that guests would order more frequently — and enjoy more — if the menu presented them properly. High-margin items with exceptional food cost ratios that sit in low-visibility positions. Dishes the chef is proudest of, buried below a familiar crowd-pleaser that guests default to out of habit, not preference. Appetizers and desserts that would increase per-guest revenue by $8 to $14, never ordered because the menu structure does not create the right moment to consider them.</p>
+              <p>The data tells a clear story. Across every Georgian restaurant we have analyzed, there are items on the menu that guests would order more frequently — and enjoy more — if the menu presented them properly. High-margin items like chakapuli and lobiani with exceptional food cost ratios that sit in low-visibility positions. Dishes the chef is proudest of, buried below a familiar adjarian khachapuri that guests default to out of habit, not preference. Appetizers, Saperavi wine pairings, and desserts that would increase per-guest revenue by $8 to $14, never ordered because the menu structure does not create the right moment to consider them.</p>
 
-              <p>Your customers say they love the menu because they enjoy the food. That is a testament to your chef, your sourcing, your execution. It is not a testament to your menu design. Those are different disciplines. The question is not whether your guests are happy — they clearly are. The question is whether your menu is capturing the full revenue potential of that happiness. In our experience, across every independent restaurant we have worked with, the answer has been no. Not because the restaurant is doing anything wrong. Because the menu was never engineered to do it right.</p>
+              <p>Your customers say they love the menu because they enjoy the food. That is a testament to your chef, your sourcing, your execution. It is not a testament to your menu design. Those are different disciplines. The question is not whether your guests are happy — they clearly are. The question is whether your menu is capturing the full revenue potential of that happiness. In our experience, across every Georgian restaurant we have worked with, the answer has been no. Not because the restaurant is doing anything wrong. Because the menu was never engineered to do it right.</p>
             </div>
           </div>
         </div>

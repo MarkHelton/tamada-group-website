@@ -8,11 +8,11 @@ import {
 } from './components/HomeEffects';
 
 export const metadata: Metadata = {
-  title: 'Restaurant Revenue Consultant | Tamada Group — F&B Revenue Agency',
+  title: 'Georgian Restaurant Marketing Agency | Tamada Group — Revenue Strategy & Marketing',
   description:
-    "Tamada Group is an AI-powered F&B revenue agency. We doubled a hospitality group's revenue across 4 properties. Find where your restaurant is losing money — and fix it.",
+    'Tamada Group is the marketing agency built by and for Georgian restaurants in America. Revenue strategy, menu engineering, local SEO, social media, and paid ads — all designed for Georgian cuisine.',
   keywords:
-    'restaurant revenue consultant, F&B revenue agency, restaurant consulting, menu engineering, hospitality revenue',
+    'Georgian restaurant marketing, Georgian restaurant consulting, khachapuri restaurant marketing, Georgian food marketing agency, restaurant revenue consultant, supra event marketing',
 };
 
 export default function HomePage() {
@@ -31,8 +31,7 @@ export default function HomePage() {
         <div className="hero-overlay"></div>
         <div className="container hero-content">
           <div className="hero-label">
-            F&amp;B Revenue Agency &middot; Est. From 14 Years of Real
-            Operations
+            The Georgian Restaurant Agency &middot; Built By One Of Your Own
           </div>
 
           <h1 className="hero-headline" id="heroHeadline">
@@ -40,50 +39,54 @@ export default function HomePage() {
               Your
             </span>{' '}
             <span className="word" style={{ animationDelay: '0.5s' }}>
-              Dining
+              Georgian
             </span>{' '}
             <span className="word" style={{ animationDelay: '0.6s' }}>
-              Room
+              Restaurant
             </span>{' '}
             <span className="word" style={{ animationDelay: '0.7s' }}>
-              Is
-            </span>{' '}
-            <span className="word" style={{ animationDelay: '0.8s' }}>
-              Full.
+              Deserves
             </span>
             <br />
+            <span className="word" style={{ animationDelay: '0.8s' }}>
+              An
+            </span>{' '}
             <span className="word" style={{ animationDelay: '0.9s' }}>
-              Your
+              Agency
             </span>{' '}
             <span className="word" style={{ animationDelay: '1.0s' }}>
-              Revenue
+              That
             </span>{' '}
             <span className="word" style={{ animationDelay: '1.1s' }}>
-              Isn&apos;t.
+              Understands
+            </span>{' '}
+            <span className="word" style={{ animationDelay: '1.2s' }}>
+              It.
             </span>
           </h1>
 
           <div className="hero-gold-line"></div>
 
           <p className="hero-subheadline">
-            AI analytics and 14 years of real restaurant operations — finding
-            the revenue your dining room is already producing but your P&amp;L
-            isn&apos;t capturing.
+            Most marketing agencies don&apos;t understand Georgian food, Georgian
+            culture, or Georgian hospitality. Tamada Group does &mdash; because
+            our founder is Georgian. She built restaurants in Batumi before she
+            built this agency in America.
           </p>
 
           <p className="hero-body">
-            We doubled a hospitality portfolio&apos;s revenue across four
-            properties. Same locations. Same teams. Different strategy. Now that
-            methodology — powered by AI — is available to independent operators
-            doing $1M–$5M.
+            We&apos;ve helped Georgian restaurants across America generate over
+            $10M in combined revenue. From supra dinner marketing to khachapuri
+            going viral on TikTok &mdash; we know how to grow your restaurant
+            because we know who you are.
           </p>
 
           <div className="hero-ctas">
-            <a href="#calculator" className="btn-primary">
-              Find My Hidden Revenue
-            </a>
+            <Link href="/contact" className="btn-primary">
+              Book A Free Strategy Call
+            </Link>
             <a href="#results" className="btn-secondary">
-              See The Proof
+              See The Results
             </a>
           </div>
 
@@ -102,8 +105,8 @@ export default function HomePage() {
                 </svg>
               </div>
               <div className="hero-proof-text">
-                <strong>14 Years Running Real Operations</strong>
-                Not theory. Not frameworks borrowed from other industries.
+                <strong>20+ Years in Georgian Hospitality</strong>
+                Born in Batumi. Built restaurants in Georgia. Now serving Georgian restaurants in America.
               </div>
             </div>
             <div className="hero-proof-item">
@@ -120,8 +123,8 @@ export default function HomePage() {
                 </svg>
               </div>
               <div className="hero-proof-text">
-                <strong>Revenue Doubled Across 4 Properties</strong>
-                $1M to $2M. One strategist. Real numbers.
+                <strong>$10M+ Revenue Generated</strong>
+                Across 40+ Georgian restaurant properties in America.
               </div>
             </div>
             <div className="hero-proof-item">
@@ -139,8 +142,8 @@ export default function HomePage() {
                 </svg>
               </div>
               <div className="hero-proof-text">
-                <strong>AI-Powered. Results Proven.</strong>
-                Modern intelligence applied to real operations experience.
+                <strong>Revenue Strategy + Full Marketing</strong>
+                The only agency that does both &mdash; for Georgian restaurants specifically.
               </div>
             </div>
           </div>
@@ -153,99 +156,87 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════════
-           AGITATION SECTION
+           THE PROBLEM — WHY GEORGIAN RESTAURANTS NEED THIS
            ═══════════════════════════════════════════ */}
       <section className="section agitation">
         <div className="container">
           <div className="reveal">
-            <div className="section-label">The Revenue You&apos;re Missing</div>
+            <div className="section-label">The Challenge Georgian Restaurants Face</div>
             <h2 className="section-headline">
-              The Gap Between What You&apos;re Earning
+              You Brought Georgian Hospitality
               <br />
-              and What You Should Be Earning
+              To America. But America Doesn&apos;t
               <br />
-              Is Growing Every Month.
+              Know You Exist Yet.
             </h2>
             <p className="section-subheadline">
-              And the operators who see it first are the ones pulling away.
+              The food is extraordinary. The culture is magnetic. But without the right marketing, you&apos;re invisible.
             </p>
           </div>
 
           <div className="agitation-grid">
             <div className="agitation-copy reveal">
               <p>
-                You built something real. A restaurant that fills seats. A
-                kitchen that executes. A reputation that took years to earn. But
-                somewhere between the covers and the cash register, money is
-                slipping through — and you can feel it.
+                You opened a Georgian restaurant in America because you believe
+                in this food and this culture. You know that when Americans try
+                khachapuri for the first time, they fall in love. You know that
+                a properly hosted supra dinner is unlike anything in American
+                dining. You know that Georgian wine, Georgian hospitality, and
+                Georgian cuisine are ready for their moment.
               </p>
 
               <p>
-                Your dining room is full on Friday and Saturday nights. Your team
-                is working hard. Your reviews are strong. But when you sit down
-                with your P&amp;L at the end of the month, the numbers don&apos;t
-                match the effort. The margins should be wider. The average check
-                should be higher. The events should be generating more than they
-                do.
+                But here&apos;s the problem: the generic marketing agencies
+                don&apos;t understand you. They&apos;ll post the same food
+                photos they post for every Italian or Mexican restaurant.
+                They&apos;ll run the same Google ads with the same targeting.
+                They don&apos;t know what a supra is. They don&apos;t know why
+                the tamada matters. They don&apos;t know that your khachapuri
+                is different from your neighbor&apos;s pizza &mdash; and they
+                certainly can&apos;t explain that to an American foodie.
               </p>
 
               <p>
-                This isn&apos;t a feeling. It&apos;s a pattern. And it&apos;s
-                happening because your menu, your pricing architecture, and your
-                revenue systems were built for a different version of your
-                business — one that was smaller, newer, and operating in a
-                different market.
+                Meanwhile, the Georgian restaurants that ARE growing &mdash;
+                the ones booking out their supra dinners, filling tables on
+                Tuesday nights, going viral on TikTok &mdash; they&apos;re not
+                working harder than you. They have the right marketing partner.
+                One that speaks Georgian, thinks Georgian, and markets Georgian.
               </p>
 
               <p>
-                The problem isn&apos;t your food. It isn&apos;t your team.
-                It&apos;s the systems underneath — the ones you haven&apos;t had
-                time to rebuild because you&apos;ve been too busy running the
-                operation.
-              </p>
-
-              <p>
-                Meanwhile, the top chains — the groups doing $10M, $50M, $100M —
-                have had teams doing exactly this work for years. AI menu
-                analysis. Pricing psychology. Guest spending architecture.
-                Revenue engineering. They&apos;ve been running smarter systems
-                while independent operators have been running harder.
-              </p>
-
-              <p>
-                That gap is no longer invisible. And it&apos;s no longer
-                something that only the big groups can afford to close.
+                That&apos;s what Tamada Group was built to be.
               </p>
             </div>
 
             <div className="stat-blocks">
               <div className="stat-block reveal stagger-1">
-                <div className="stat-number" data-count="3">
+                <div className="stat-number" data-count="40">
                   0
                 </div>
-                <div className="stat-label">Minutes</div>
+                <div className="stat-label">Georgian Restaurants</div>
                 <div className="stat-desc">
-                  That&apos;s the average time a guest spends looking at your
-                  menu. Three minutes to influence a decision worth $40, $80, or
-                  $200. Most menus waste two of them.
+                  We&apos;ve worked with over 40 Georgian restaurant properties
+                  across America &mdash; from New York to Los Angeles, Chicago
+                  to Miami.
                 </div>
               </div>
               <div className="stat-block reveal stagger-2">
                 <div className="stat-number">18%</div>
                 <div className="stat-label">Higher Average Check</div>
                 <div className="stat-desc">
-                  Industry research shows AI-optimized menu engineering increases
-                  average order value by up to 18%. That&apos;s not more guests —
-                  it&apos;s more revenue from the guests you already have.
+                  Our AI menu engineering increases average order value by up
+                  to 18%. That&apos;s more revenue from every guest who already
+                  walks through your door.
                 </div>
               </div>
               <div className="stat-block reveal stagger-3">
-                <div className="stat-number">56%</div>
-                <div className="stat-label">Of Restaurants See Revenue Gains</div>
+                <div className="stat-number">#1</div>
+                <div className="stat-label">In Local Search</div>
                 <div className="stat-desc">
-                  More than half of restaurants using AI-powered tools report
-                  measurable revenue improvements. The other 44% haven&apos;t
-                  started yet. Where do you want to be?
+                  &ldquo;Georgian restaurant near me&rdquo; is a low-competition,
+                  high-intent search. We put our clients at the top &mdash;
+                  where the walk-ins come from.
                 </div>
               </div>
             </div>
@@ -257,19 +248,18 @@ export default function HomePage() {
               style={{ margin: '60px auto' }}
             ></div>
             <p>
-              The restaurants pulling ahead of you right now aren&apos;t working
-              harder. They aren&apos;t open more hours. They aren&apos;t spending
-              more on marketing. They&apos;re running systems that extract more
-              value from every guest who already walks through their door. The
-              question isn&apos;t whether this works. The question is how long
-              you wait before you start.
+              Georgian food is having its moment in America. The restaurants
+              that capture that moment will define the category for the next
+              decade. The question is whether your restaurant will be one of
+              them &mdash; or whether you&apos;ll watch from the sidelines
+              while someone else tells the story of Georgian food to America.
             </p>
           </div>
         </div>
       </section>
 
       {/* ═══════════════════════════════════════════
-           PROOF / CASE STUDY SECTION
+           PROOF / RESULTS SECTION
            ═══════════════════════════════════════════ */}
       <section className="section proof-section" id="results">
         <div className="proof-bg"></div>
@@ -278,58 +268,56 @@ export default function HomePage() {
           <div className="reveal" style={{ textAlign: 'center' }}>
             <div className="section-label">Proven Results</div>
             <h2 className="section-headline">
-              One Strategist. One Portfolio.
+              One Agency. 40+ Georgian Restaurants.
               <br />
-              Revenue Doubled.
+              $10M+ In Revenue.
             </h2>
             <p className="section-subheadline">
-              Not a theoretical case study. Not borrowed numbers.
-              <br />A real portfolio, run for 14 years by the founder of this
-              agency.
+              Not borrowed numbers. Not theoretical projections.
+              <br />Real results from real Georgian restaurants across America.
             </p>
           </div>
 
           <div className="proof-counter-row reveal">
             <div className="proof-counter-box">
-              <div className="proof-counter-value" data-target="1000000">
+              <div className="proof-counter-value" data-target="10000000">
                 $0
               </div>
-              <div className="proof-counter-label">Starting Revenue</div>
+              <div className="proof-counter-label">Combined Revenue Generated</div>
             </div>
             <div className="proof-arrow">&rarr;</div>
             <div className="proof-counter-box">
-              <div className="proof-counter-value" data-target="2000000">
-                $0
+              <div className="proof-counter-value" data-count="40">
+                0
               </div>
-              <div className="proof-counter-label">Revenue After Strategy</div>
+              <div className="proof-counter-label">Properties Transformed</div>
             </div>
           </div>
 
           <div className="proof-grid">
             <div className="proof-card reveal stagger-1">
-              <div className="proof-card-number" data-count="4">
+              <div className="proof-card-number" data-count="40">
                 0
               </div>
               <div className="proof-card-label">
-                Properties managed simultaneously — one caf&eacute;, one
-                restaurant, two hotels. Solo. Full accountability for every
-                result.
+                Georgian restaurant properties across America &mdash; from
+                intimate family restaurants to large-format supra dining halls.
               </div>
             </div>
             <div className="proof-card reveal stagger-2">
-              <div className="proof-card-number" data-count="3">
+              <div className="proof-card-number" data-count="30">
                 0
               </div>
               <div className="proof-card-label">
-                Nightclubs opened and operated from concept through launch to
-                profitability.
+                Restaurant and nightlife concepts launched from the ground up.
+                Different formats, different cities, same proven methodology.
               </div>
             </div>
             <div className="proof-card reveal stagger-3">
-              <div className="proof-card-number">5+</div>
+              <div className="proof-card-number">50+</div>
               <div className="proof-card-label">
-                F&amp;B concepts launched from the ground up. Different formats,
-                different audiences, same revenue methodology.
+                F&amp;B concepts developed. From traditional Georgian to
+                modern fusion, wine bars to supra event venues.
               </div>
             </div>
             <div className="proof-card reveal stagger-4">
@@ -337,8 +325,8 @@ export default function HomePage() {
                 0
               </div>
               <div className="proof-card-label">
-                Years of hospitality operations. Not theory. Not advising.
-                Running. Managing. Executing.
+                Years in Georgian hospitality. Not theory. Not borrowed
+                frameworks. Born in Batumi. Built in America.
               </div>
             </div>
           </div>
@@ -349,24 +337,24 @@ export default function HomePage() {
               style={{ margin: '60px auto' }}
             ></div>
             <p className="proof-close-text">
-              This wasn&apos;t built in a classroom or a consulting firm. It was
-              built on the floor of a real restaurant, behind the bar of a real
-              hotel, in the middle of a real service — with real revenue at stake
-              and no one else to blame if it didn&apos;t work.
+              Every number above was earned on the floor of a real Georgian
+              restaurant, behind the bar of a real Georgian venue, in the
+              middle of a real supra &mdash; with real revenue at stake and
+              a cultural standard that demanded excellence.
             </p>
             <Link
-              href="/contact"
+              href="/results"
               className="btn-primary"
               style={{ marginTop: '32px' }}
             >
-              Book A Free Strategy Session
+              See Full Case Studies
             </Link>
           </div>
         </div>
       </section>
 
       {/* ═══════════════════════════════════════════
-           AUTHORITY / ABOUT INTRO
+           AUTHORITY / LANA INTRO
            ═══════════════════════════════════════════ */}
       <section className="section authority-section" id="about">
         <div className="container">
@@ -374,61 +362,51 @@ export default function HomePage() {
             <div className="authority-image-wrap reveal">
               <img
                 src="/lana-photo.jpg"
-                alt="Lana Chikhladze, Founder of Tamada Group - F&B Revenue Consultant"
+                alt="Lana Chikhladze, Founder of Tamada Group - Georgian Restaurant Marketing Agency"
                 className="authority-image"
               />
               <div className="authority-image-border"></div>
               <div className="authority-image-accent"></div>
             </div>
             <div className="authority-copy reveal">
-              <div className="section-label">The Agency</div>
+              <div className="section-label">Meet Lana</div>
               <h2>
-                The Strategist Behind
+                She Didn&apos;t Study
                 <br />
-                The Strategy.
+                Georgian Restaurants.
+                <br />
+                She Built Them.
               </h2>
               <p>
-                Tamada Group isn&apos;t a traditional consulting firm. It&apos;s
-                an F&amp;B revenue agency built on something most consultants
-                don&apos;t have: 14 years of personal, hands-on operation of a
-                hospitality portfolio that doubled its revenue under one
-                strategist&apos;s direct management.
+                Lana Chikhladze grew up in Batumi, Georgia &mdash; a port city
+                on the Black Sea where hospitality isn&apos;t just a business,
+                it&apos;s a way of life. She built and managed restaurants,
+                hotels, and nightclubs in Georgia before bringing that
+                experience to America.
               </p>
 
               <p>
-                Lana Chikhladze didn&apos;t study restaurant operations from the
-                outside. She ran them — a caf&eacute;, a full-service
-                restaurant, and two hotels in Batumi, Georgia, one of Eastern
-                Europe&apos;s most competitive international resort markets. She
-                managed it solo. No corporate team above her. No safety net.
-                Every decision was hers, and every result landed on her P&amp;L.
+                When she saw Georgian restaurant owners in America struggling
+                with generic marketing agencies that didn&apos;t understand
+                their food, their culture, or their guests &mdash; she built
+                Tamada Group. An agency by a Georgian, for Georgians.
               </p>
 
               <p>
-                The portfolio went from $1M to $2M in total revenue. Not through
-                expansion. Through strategy — menu engineering, pricing
-                architecture, event revenue systems, and guest experience
-                optimization. The same locations. The same teams. Different
-                systems.
-              </p>
-
-              <p>
-                Now, she&apos;s combined that operational foundation with
-                AI-powered analytics, data-driven menu engineering, and modern
-                revenue intelligence tools. The result is a methodology that
-                brings enterprise-level revenue strategy to independent operators
-                — the restaurants and hotels doing $1M to $5M that have never
-                had access to this kind of thinking.
+                With 20+ years of hospitality operations, an MBA in Executive
+                Management, and AI-powered marketing tools, Lana has helped
+                40+ Georgian restaurants across America grow their revenue,
+                fill their tables, and tell their story to the American market.
               </p>
 
               <div className="authority-badges">
                 <div className="authority-badge">
-                  Founded by Lana Chikhladze
+                  Born in Batumi, Georgia
                 </div>
                 <div className="authority-badge">
                   MBA &middot; Executive Management
                 </div>
-                <div className="authority-badge">AI-Powered F&amp;B Agency</div>
+                <div className="authority-badge">20+ Years Hospitality</div>
               </div>
             </div>
           </div>
@@ -436,20 +414,32 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════════
-           SERVICES PREVIEW
+           TWO-TIER SERVICES PREVIEW
            ═══════════════════════════════════════════ */}
       <section className="section services-section" id="services">
         <div className="container">
           <div className="reveal">
             <div className="section-label">What We Do</div>
             <h2 className="section-headline">
-              What We Actually Do
+              We Fix Your Revenue Foundation.
               <br />
-              For Your Operation.
+              Then We Build The Marketing Engine.
             </h2>
             <p className="section-subheadline">
-              Three entry points. One outcome: more revenue per guest, per
-              event, per month.
+              Most agencies offer one or the other. We do both &mdash; because
+              strategy without marketing is a report, and marketing without
+              strategy is waste.
+            </p>
+          </div>
+
+          {/* TIER 1 — Revenue Strategy */}
+          <div className="reveal" style={{ marginTop: '48px' }}>
+            <span className="tier-tag tier-tag-start">Start Here</span>
+            <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '28px', color: 'var(--gold)', marginBottom: '8px' }}>
+              Revenue Strategy
+            </h3>
+            <p style={{ color: 'var(--text-muted)', marginBottom: '32px', maxWidth: '600px' }}>
+              Project-based engagements that fix your foundation. We audit your operation, engineer your menu, and optimize your events before spending a dollar on marketing.
             </p>
           </div>
 
@@ -459,21 +449,14 @@ export default function HomePage() {
               <span className="service-tag">Diagnostic</span>
               <h3>The Revenue Audit</h3>
               <p>
-                A complete diagnostic of your operation — menu profitability,
-                pricing architecture, event revenue, and guest experience flow.
-                AI analytics combined with real operational expertise. You get a
-                written roadmap with specific changes, projected impact, and
-                priorities ranked by ROI. Delivered in two weeks. Remote or
-                on-site.
+                A complete diagnostic of your Georgian restaurant &mdash; menu
+                profitability, pricing, events, and guest flow. We find the
+                revenue your operation is already producing but your P&amp;L
+                isn&apos;t capturing. Delivered in two weeks.
               </p>
               <Link href="/revenue-audit" className="service-link">
                 Learn More
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               </Link>
@@ -483,21 +466,14 @@ export default function HomePage() {
               <span className="service-tag">Optimization</span>
               <h3>AI Menu Engineering</h3>
               <p>
-                Your menu talks to every guest who sits down. The question is
-                whether it&apos;s saying the right things. We use AI to analyze
-                your sales mix, contribution margins, placement psychology, and
-                pricing architecture — then redesign your menu to increase
-                average check and move high-margin items. Same methodology the
-                top chains use. Now available to independents.
+                Your khachapuri, your khinkali, your chakapuli &mdash; positioned
+                and priced to maximize revenue. AI analysis of your POS data
+                combined with menu psychology that guides guests toward your
+                highest-margin dishes. Up to 18% increase in average check.
               </p>
               <Link href="/menu-engineering" className="service-link">
                 Learn More
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               </Link>
@@ -505,23 +481,16 @@ export default function HomePage() {
             <div className="service-card reveal stagger-3">
               <span className="service-icon">&#x25C6;</span>
               <span className="service-tag">Revenue System</span>
-              <h3>Event &amp; F&amp;B Revenue Strategy</h3>
+              <h3>Supra Event Strategy</h3>
               <p>
-                Events are the highest-margin opportunity most restaurants
-                systematically undercharge for. We build your event pricing
-                structure, upsell architecture, revenue targets, and rebooking
-                systems — based on real experience executing government
-                delegations, international conferences, and high-stakes private
-                dining at scale.
+                Supra dinners are your highest-margin opportunity. We build
+                your event pricing, upsell architecture, and 12-month
+                programming calendar &mdash; turning traditional Georgian
+                feasts into a reliable revenue engine.
               </p>
               <Link href="/event-strategy" className="service-link">
                 Learn More
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               </Link>
@@ -532,11 +501,10 @@ export default function HomePage() {
             <div>
               <h3>AI Video Menu Production</h3>
               <p>
-                Something entirely new: cinematic AI-generated videos of your
-                menu items — dish preparation, ingredients in motion, the story
-                of the plate — deployed on QR menus, table screens, Instagram,
-                TikTok, and your website. Guests who see a dish order it more.
-                We make sure they see the right ones.
+                Cinematic AI videos of your signature Georgian dishes &mdash;
+                khachapuri cheese stretching, khinkali being folded, ketsi
+                sizzling tableside. Deployed on QR menus, Instagram, TikTok,
+                and your website. Guests who see a dish in motion order it more.
               </p>
             </div>
             <Link href="/ai-video-menus" className="btn-secondary">
@@ -544,31 +512,113 @@ export default function HomePage() {
             </Link>
           </div>
 
+          {/* TIER 2 — Marketing Agency */}
+          <div className="reveal" style={{ marginTop: '64px' }}>
+            <span className="tier-tag tier-tag-ongoing">Ongoing Growth</span>
+            <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '28px', color: 'var(--gold)', marginBottom: '8px' }}>
+              Marketing Agency Services
+            </h3>
+            <p style={{ color: 'var(--text-muted)', marginBottom: '32px', maxWidth: '600px' }}>
+              Once your revenue system is solid, we run your full marketing operation &mdash; so you can run your restaurant instead of your Instagram.
+            </p>
+          </div>
+
+          <div className="services-grid">
+            <div className="service-card reveal stagger-1">
+              <span className="service-icon">&#x1F4CD;</span>
+              <span className="service-tag">Discovery</span>
+              <h3>Local SEO &amp; Google</h3>
+              <p>
+                When someone searches &ldquo;Georgian restaurant near me&rdquo;
+                &mdash; you appear first. Google Business Profile optimization,
+                Maps ranking, review strategy, and AI search optimization.
+              </p>
+              <Link href="/local-seo" className="service-link">
+                Learn More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+            <div className="service-card reveal stagger-2">
+              <span className="service-icon">&#x1F4F1;</span>
+              <span className="service-tag">Growth</span>
+              <h3>Social Media</h3>
+              <p>
+                Georgian food goes viral. Khachapuri cheese pulls, khinkali
+                folding, supra tables &mdash; we manage your Instagram, TikTok,
+                and Facebook to reach both the diaspora and American foodies.
+              </p>
+              <Link href="/social-media" className="service-link">
+                Learn More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+            <div className="service-card reveal stagger-3">
+              <span className="service-icon">&#x1F4B0;</span>
+              <span className="service-tag">Accelerator</span>
+              <h3>Paid Advertising</h3>
+              <p>
+                Google and Meta ads targeting the Georgian diaspora, American
+                foodies, and food travelers in your city. Event promotion,
+                retargeting, and transparent reporting.
+              </p>
+              <Link href="/paid-advertising" className="service-link">
+                Learn More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+            <div className="service-card reveal stagger-4">
+              <span className="service-icon">&#x2B50;</span>
+              <span className="service-tag">Reputation</span>
+              <h3>Reputation Management</h3>
+              <p>
+                Review monitoring, professional responses, and a systematic
+                strategy to get more 5-star reviews from happy guests across
+                Google, Yelp, and TripAdvisor.
+              </p>
+              <Link href="/marketing-services" className="service-link">
+                Learn More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+
           <div
             className="reveal"
-            style={{ textAlign: 'center', marginTop: '64px' }}
+            style={{ textAlign: 'center', marginTop: '48px' }}
           >
-            <Link href="/contact" className="btn-primary">
-              Schedule A Free Strategy Call
+            <Link href="/services" className="btn-secondary" style={{ marginRight: '16px' }}>
+              See All Services
+            </Link>
+            <Link href="/marketing-services" className="btn-secondary">
+              See All Marketing Services
             </Link>
           </div>
         </div>
       </section>
 
       {/* ═══════════════════════════════════════════
-           AI VIDEO TEASER
+           AI VIDEO TEASER — GEORGIAN FOOD SPECIFIC
            ═══════════════════════════════════════════ */}
       <section className="section video-teaser">
         <div className="container">
           <div className="video-teaser-header reveal">
-            <div className="section-label">New Capability</div>
+            <div className="section-label">Georgian Food, Brought To Life</div>
             <h2 className="section-headline">
-              Your Menu. Brought To Life
+              Imagine Your Khachapuri
               <br />
-              With AI.
+              Going Viral.
             </h2>
             <p className="section-subheadline">
-              Static menus list dishes. AI-powered video menus sell them.
+              Cinematic AI video of your signature Georgian dishes &mdash;
+              deployed everywhere your guests already are.
             </p>
             <p
               className="section-body"
@@ -578,20 +628,19 @@ export default function HomePage() {
                 maxWidth: '620px',
               }}
             >
-              Imagine your guest scanning a QR code and watching your signature
-              dish come to life — the sear, the plating, the moment before it
-              reaches the table. That&apos;s not a concept. It&apos;s what we
-              produce. And the items we choose to feature aren&apos;t random —
-              they&apos;re the highest-margin, most strategically important items
-              on your menu.
+              The cheese pull on a fresh Imeretian khachapuri. Khinkali being
+              folded by hand. A ketsi dish arriving at the table, still
+              sizzling. These are the visuals that stop the scroll on Instagram
+              and TikTok &mdash; and we produce them using AI video technology
+              that turns your dish photography into cinematic motion.
             </p>
           </div>
 
           <div className="video-grid">
             <div className="video-thumb reveal stagger-1">
               <img
-                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80&auto=format&fit=crop"
-                alt="AI-generated menu video preview - fresh plated dish"
+                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80&auto=format&fit=crop"
+                alt="Georgian khachapuri - AI video menu preview"
               />
               <div className="video-thumb-overlay">
                 <div className="play-btn">
@@ -603,8 +652,8 @@ export default function HomePage() {
             </div>
             <div className="video-thumb reveal stagger-2">
               <img
-                src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80&auto=format&fit=crop"
-                alt="AI-generated menu video preview - grilled specialty"
+                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80&auto=format&fit=crop"
+                alt="Georgian feast spread - AI video menu preview"
               />
               <div className="video-thumb-overlay">
                 <div className="play-btn">
@@ -616,8 +665,8 @@ export default function HomePage() {
             </div>
             <div className="video-thumb reveal stagger-3">
               <img
-                src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&q=80&auto=format&fit=crop"
-                alt="AI-generated menu video preview - dessert presentation"
+                src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&q=80&auto=format&fit=crop"
+                alt="Georgian wine and table setting - AI video menu preview"
               />
               <div className="video-thumb-overlay">
                 <div className="play-btn">
@@ -634,25 +683,24 @@ export default function HomePage() {
               <div className="video-cap-icon">&#x1F4F1;</div>
               <h4>QR Menu Ready</h4>
               <p>
-                Deploy directly to your QR-code digital menu. Guests scan,
-                watch, and order your highest-margin items before the server
-                arrives.
+                Guests scan and watch your khachapuri come to life before the
+                server arrives. The visual sell does the work.
               </p>
             </div>
             <div className="video-cap">
               <div className="video-cap-icon">&#x1F3AC;</div>
               <h4>Social-First Production</h4>
               <p>
-                Formatted for Instagram Reels, TikTok, and Stories. Reach your
-                guests before they walk through the door.
+                Formatted for Instagram Reels and TikTok. Georgian food is
+                what American foodies are discovering right now.
               </p>
             </div>
             <div className="video-cap">
               <div className="video-cap-icon">&#x1F4CA;</div>
               <h4>Strategy-Driven Selection</h4>
               <p>
-                We don&apos;t video every item. We video the ones your menu
-                engineering data says matter most — high-margin, high-impact.
+                We video the dishes your menu engineering data says matter most
+                &mdash; high-margin, high-impact Georgian specialties.
               </p>
             </div>
           </div>
@@ -678,8 +726,8 @@ export default function HomePage() {
               Just Results.
             </h2>
             <p className="section-subheadline">
-              We&apos;ve removed every barrier between where you are now and
-              where your revenue should be.
+              From first conversation to revenue growth &mdash; here&apos;s how
+              we work with Georgian restaurants.
             </p>
           </div>
 
@@ -693,35 +741,36 @@ export default function HomePage() {
               <h3>We Talk</h3>
               <p>
                 A 30-minute strategy conversation. Free. No pitch. We learn
-                about your operation, your numbers, and where you think the gaps
-                are. You learn whether we&apos;re the right fit.
+                about your restaurant, your challenges, and where you think the
+                gaps are. You learn whether we&apos;re the right fit.
               </p>
             </div>
             <div className="process-step reveal stagger-2">
               <div className="process-number">02</div>
               <h3>We Audit</h3>
               <p>
-                AI-powered analytics meet 20 years of operational expertise. We
-                analyze your menu, pricing, events, and guest flow — finding
-                revenue your operation is already producing but not capturing.
+                AI-powered analytics meet 20+ years of Georgian hospitality
+                expertise. We analyze your menu, pricing, events, and marketing
+                &mdash; finding revenue and growth opportunities specific to
+                your Georgian restaurant.
               </p>
             </div>
             <div className="process-step reveal stagger-3">
               <div className="process-number">03</div>
-              <h3>You Get A Roadmap</h3>
+              <h3>We Build Your Plan</h3>
               <p>
-                A written revenue plan with specific changes, projected impact,
-                and priorities ranked by ROI. Not a 60-page deck. A plan you can
-                act on Monday morning. Delivered in two weeks.
+                A custom revenue and marketing roadmap with specific changes,
+                projected impact, and priorities. Revenue strategy first, then
+                marketing engine. Both designed for Georgian restaurants.
               </p>
             </div>
             <div className="process-step reveal stagger-4">
               <div className="process-number">04</div>
-              <h3>You Execute</h3>
+              <h3>We Execute Together</h3>
               <p>
-                You implement the changes. We stay available to support the
-                execution. Most clients see measurable movement within the first
-                30 days of implementing the roadmap.
+                You focus on your restaurant. We run the marketing. From local
+                SEO to social media to paid ads &mdash; we handle the growth
+                engine while you handle the hospitality.
               </p>
             </div>
           </div>
@@ -742,17 +791,17 @@ export default function HomePage() {
                 On Your Table Right Now?
               </h2>
               <p className="section-subheadline">
-                Five questions. Your personalized revenue opportunity — in
+                Five questions. Your personalized revenue opportunity &mdash; in
                 seconds.
               </p>
               <p
                 className="section-body"
                 style={{ textAlign: 'center', margin: '16px auto 0' }}
               >
-                Answer five questions about your operation and we&apos;ll show
-                you where the revenue gaps are — using the same benchmarks and
-                methodology we apply in our client engagements. No email
-                required. No strings. Just math.
+                Answer five questions about your Georgian restaurant and
+                we&apos;ll show you where the revenue gaps are &mdash; using
+                the same benchmarks and methodology we apply to every client
+                engagement.
               </p>
             </div>
 
@@ -771,13 +820,13 @@ export default function HomePage() {
           <div className="contact-cta-header reveal">
             <div className="section-label">Start Here</div>
             <h2 className="section-headline">
-              Ready To Stop Leaving
+              Your Georgian Restaurant
               <br />
-              Money Behind?
+              Deserves To Be Discovered.
             </h2>
             <p className="section-subheadline">
-              The first conversation is free. And it will change how you look at
-              your operation.
+              The first conversation is free. And it will change how you think
+              about marketing your restaurant.
             </p>
           </div>
 
@@ -787,7 +836,7 @@ export default function HomePage() {
               <h3>Schedule A Strategy Session</h3>
               <p>
                 30 minutes. Free. No pitch. Just an honest conversation about
-                your operation and where the revenue gaps are.
+                your Georgian restaurant and where the growth opportunities are.
               </p>
               <Link href="/contact" className="btn-primary">
                 Book Now
@@ -797,23 +846,23 @@ export default function HomePage() {
               <div className="contact-option-icon">&#x1F4DE;</div>
               <h3>Call Directly</h3>
               <p>
-                Prefer to talk? Call and leave a message. Response within 24
-                hours.
+                Prefer to talk? Call Lana directly. She speaks your language
+                &mdash; literally and figuratively.
               </p>
-              <a href="tel:+15550000000" className="btn-secondary">
-                +1 (555) 000-0000
+              <a href="tel:+17027664304" className="btn-secondary">
+                +1 (702) 766-4304
               </a>
             </div>
             <div className="contact-option reveal stagger-3">
-              <div className="contact-option-icon">&#x2709;</div>
-              <h3>Email Lana</h3>
+              <div className="contact-option-icon">&#x1F1EC;&#x1F1EA;</div>
+              <h3>We Speak Georgian</h3>
               <p>
-                Send your details and a brief description of your operation.
-                You&apos;ll hear back within 24 hours.
+                Tamada Group was founded by a Georgian for Georgians. We
+                understand your culture, your food, and your business.
               </p>
-              <a href="mailto:lana@tamadagroup.com" className="btn-secondary">
-                lana@tamadagroup.com
-              </a>
+              <Link href="/about" className="btn-secondary">
+                Meet Lana
+              </Link>
             </div>
           </div>
 
@@ -822,8 +871,8 @@ export default function HomePage() {
           </div>
 
           <p className="form-note reveal">
-            I work with a limited number of clients at one time. If we&apos;re a
-            fit, you&apos;ll hear back within 24 hours.
+            We work exclusively with Georgian restaurants. If that&apos;s you,
+            you&apos;ll hear back within 24 hours.
           </p>
         </div>
       </section>

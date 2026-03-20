@@ -7,9 +7,9 @@ export const metadata: Metadata = {
   title:
     'AI Menu Videos for Restaurants | Cinematic Menu Video Production | Tamada Group',
   description:
-    'Transform your menu photography into cinematic AI videos that show dishes being prepared. Increase orders of high-margin items. Deployed on QR menus, screens, and social.',
+    'Transform your Georgian menu photography into cinematic AI videos &mdash; khachapuri cheese stretching, khinkali being folded, Saperavi wine being poured. Increase orders of high-margin items. Deployed on QR menus, screens, and social.',
   keywords:
-    'AI menu videos, restaurant menu video, cinematic food video, QR menu video, restaurant video production, menu engineering video',
+    'AI menu videos, Georgian food video, khachapuri video, restaurant menu video, cinematic food video, QR menu video, Georgian restaurant video production, menu engineering video',
 };
 
 export default function AiVideoMenusPage() {
@@ -163,13 +163,13 @@ export default function AiVideoMenusPage() {
 
               <p>
                 Visual content short-circuits that process entirely. When a guest
-                sees a dish in motion — steam curling off a broth, a knife
-                gliding through a seared crust, sauce pooling across a plate —
+                sees a dish in motion — khachapuri cheese stretching as it is
+                pulled apart, khinkali being folded by hand, Saperavi wine being poured into a clay cup —
                 their brain processes that information 60,000 times faster than
                 text. More importantly, it triggers an involuntary emotional
                 response. They do not evaluate the dish. They want it. That is
-                the difference between a guest ordering your $18 pasta and your
-                $42 short rib.
+                the difference between a guest ordering your $18 khinkali plate and your
+                $42 chakapuli served sizzling in a ketsi.
               </p>
 
               <p>
@@ -258,8 +258,9 @@ export default function AiVideoMenusPage() {
               <p>
                 Using advanced AI video generation, we transform each selected
                 photograph into a short cinematic clip — typically 3 to 8
-                seconds. Each video is individually directed: steam rising,
-                sauces flowing, garnishes settling, flames licking. The result is
+                seconds. Each video is individually directed: khachapuri cheese
+                stretching, Saperavi wine swirling, khinkali steam rising,
+                chakapuli bubbling in a ketsi, lobiani bread being torn open. The result is
                 not a slideshow or animation. It is photorealistic motion that
                 looks like it was captured by a professional film crew in your
                 kitchen.
@@ -314,8 +315,8 @@ export default function AiVideoMenusPage() {
           <div className="video-grid">
             <div className="video-thumb reveal stagger-1">
               <img
-                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80&auto=format&fit=crop"
-                alt="Fresh salad dish with vibrant colors — AI video menu sample"
+                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80&auto=format&fit=crop"
+                alt="Georgian khachapuri with melted cheese — AI video menu sample"
                 loading="lazy"
               />
               <div className="video-thumb-overlay">
@@ -326,13 +327,13 @@ export default function AiVideoMenusPage() {
                 </div>
               </div>
               <div className="video-thumb-label">
-                <span>Garden Composed Salad</span>
+                <span>Adjarian Khachapuri</span>
               </div>
             </div>
             <div className="video-thumb reveal stagger-2">
               <img
-                src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80&auto=format&fit=crop"
-                alt="Grilled meat dish with rich presentation — AI video menu sample"
+                src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&q=80&auto=format&fit=crop"
+                alt="Georgian wine and supra table setting — AI video menu sample"
                 loading="lazy"
               />
               <div className="video-thumb-overlay">
@@ -343,13 +344,13 @@ export default function AiVideoMenusPage() {
                 </div>
               </div>
               <div className="video-thumb-label">
-                <span>Wood-Fired Grill Selection</span>
+                <span>Hand-Folded Khinkali</span>
               </div>
             </div>
             <div className="video-thumb reveal stagger-3">
               <img
-                src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&q=80&auto=format&fit=crop"
-                alt="Plated breakfast dish — AI video menu sample"
+                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80&auto=format&fit=crop"
+                alt="Saperavi wine being poured into traditional Georgian cup — AI video menu sample"
                 loading="lazy"
               />
               <div className="video-thumb-overlay">
@@ -360,7 +361,7 @@ export default function AiVideoMenusPage() {
                 </div>
               </div>
               <div className="video-thumb-label">
-                <span>Brunch Feature</span>
+                <span>Saperavi Wine Pour</span>
               </div>
             </div>
           </div>
@@ -489,8 +490,8 @@ export default function AiVideoMenusPage() {
                 Any production company can turn a photograph into a video. That
                 is not the hard part. The hard part — and the part that actually
                 moves your revenue — is knowing which dishes to feature. A
-                cinematic video of your lowest-margin pasta does nothing for your
-                bottom line. A cinematic video of your highest-margin entree,
+                cinematic video of your lowest-margin khinkali plate does nothing for your
+                bottom line. A cinematic video of your highest-margin chakapuli in a ketsi,
                 deployed at the exact moment of decision, changes your P&amp;L.
               </p>
 

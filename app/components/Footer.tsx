@@ -9,24 +9,40 @@ export default function Footer() {
             <p>
               &copy; 2026 Tamada Group
               <br />
-              Food &amp; Beverage Revenue Agency
+              The Georgian Restaurant Agency
             </p>
             <div className="footer-social">
-              <a href="#" aria-label="LinkedIn">
-                in
-              </a>
-              <a href="mailto:lana@tamadagroup.com" aria-label="Email">
-                &#9993;
+              <a href="tel:+17027664304" aria-label="Phone">
+                &#9742;
               </a>
             </div>
           </div>
           <div className="footer-center">
-            <div className="footer-locations">
-              Las Vegas &middot; Miami &middot; Fort Lauderdale &middot; San
-              Diego &middot; International
+            <div className="footer-links-grid">
+              <div className="footer-link-column">
+                <div className="footer-link-heading">Revenue Strategy</div>
+                <Link href="/revenue-audit">Revenue Audit</Link>
+                <Link href="/menu-engineering">Menu Engineering</Link>
+                <Link href="/event-strategy">Event Strategy</Link>
+                <Link href="/ai-video-menus">AI Video Menus</Link>
+              </div>
+              <div className="footer-link-column">
+                <div className="footer-link-heading">Marketing</div>
+                <Link href="/local-seo">Local SEO &amp; Google</Link>
+                <Link href="/social-media">Social Media</Link>
+                <Link href="/paid-advertising">Paid Advertising</Link>
+                <Link href="/marketing-services">All Marketing Services</Link>
+              </div>
+              <div className="footer-link-column">
+                <div className="footer-link-heading">Company</div>
+                <Link href="/about">About Lana</Link>
+                <Link href="/results">Results</Link>
+                <Link href="/services">All Services</Link>
+                <Link href="/contact">Contact</Link>
+              </div>
             </div>
             <div className="footer-tagline">
-              Rooted in Georgian hospitality. Built for the world.
+              Rooted in Georgian hospitality. Built for Georgian restaurants in America.
             </div>
           </div>
           <div className="footer-right">
@@ -34,16 +50,13 @@ export default function Footer() {
               Book A Strategy Call
             </Link>
             <div className="footer-contact-info">
-              <a href="mailto:lana@tamadagroup.com">lana@tamadagroup.com</a>
-              <br />
-              <a href="tel:+15550000000">+1 (555) 000-0000</a>
+              <a href="tel:+17027664304">+1 (702) 766-4304</a>
             </div>
           </div>
         </div>
         <div className="footer-bottom">
           <p>
-            Tamada Group — Where Georgian Hospitality Meets AI-Powered Revenue
-            Strategy
+            Tamada Group — The Marketing Agency Built By and For Georgian Restaurants in America
           </p>
         </div>
       </div>

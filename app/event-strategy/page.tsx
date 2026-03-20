@@ -3,11 +3,11 @@ import Link from 'next/link';
 import EventStrategyEffects from './EventStrategyEffects';
 
 export const metadata: Metadata = {
-  title: 'Restaurant Event Revenue Strategy | F&B Event Consulting | Tamada Group',
+  title: 'Supra Event Revenue Strategy | Georgian Dinner Event Consulting | Tamada Group',
   description:
-    'Turn your events into your highest-margin revenue line. Tamada Group builds event pricing, upsell architecture, and revenue systems for restaurants and hotels.',
+    'Turn your supra events and Georgian feasts into your highest-margin revenue line. Tamada Group builds event pricing, upsell architecture, and revenue systems for Georgian restaurants across America.',
   keywords:
-    'restaurant event strategy, F&B event consulting, event revenue optimization, restaurant private dining, hospitality event pricing, event upsell architecture',
+    'supra event strategy, Georgian dinner events, Georgian restaurant event consulting, event revenue optimization, Georgian private dining, supra event pricing, event upsell architecture',
 };
 
 export default function EventStrategyPage() {
@@ -23,7 +23,7 @@ export default function EventStrategyPage() {
         <div className="hero-overlay"></div>
         <div className="container">
           <div className="hero-content">
-            <div className="hero-label">Event Revenue Strategy</div>
+            <div className="hero-label">Supra Event Revenue Strategy</div>
             <h1 className="hero-headline">
               <span className="word" style={{ animationDelay: '0.4s' }}>Events </span>
               <span className="word" style={{ animationDelay: '0.5s' }}>Are </span>
@@ -38,7 +38,7 @@ export default function EventStrategyPage() {
             </h1>
             <div className="hero-gold-line"></div>
             <p className="hero-subheadline">Your event program is either a revenue engine or a scheduling headache. There is no middle ground.</p>
-            <p className="hero-body">Most restaurants leave 60-80% of their event revenue potential on the table. Not because the demand is missing. Because no one built the system to capture it. Tamada Group builds event revenue architecture that transforms every booking into a high-margin transaction.</p>
+            <p className="hero-body">Most Georgian restaurants leave 60-80% of their supra and event revenue potential on the table. Not because the demand is missing &mdash; Americans are hungry for authentic Georgian feasts. Because no one built the system to capture it. Tamada Group builds supra event revenue architecture that transforms every booking into a high-margin transaction.</p>
             <div className="hero-ctas">
               <Link href="/contact" className="btn-primary cta-pulse">Build My Event Revenue System</Link>
               <Link href="/services" className="btn-secondary">View All Services</Link>
@@ -58,19 +58,19 @@ export default function EventStrategyPage() {
         <div className="container">
           <div className="reveal">
             <div className="section-label">The Authority Behind the Strategy</div>
-            <h2 className="section-headline">Lana Didn&rsquo;t Learn Events From a Textbook.<br />She Executed Them Under Diplomatic Pressure.</h2>
-            <div className="section-subheadline">Government delegations. International corporate conferences. High-stakes cultural events. Alone. In a resort context where failure was not an option.</div>
+            <h2 className="section-headline">Born in Batumi, Georgia. Built Restaurants in Georgia.<br />Now Building Supra Events Across America.</h2>
+            <div className="section-subheadline">Government delegations. International corporate conferences. High-stakes cultural events. 20+ years of experience across 40+ Georgian restaurants. Alone. In contexts where failure was not an option.</div>
           </div>
 
           <div className="credibility-grid">
             <div className="credibility-copy reveal stagger-1">
-              <p>Before Tamada Group existed as a consulting firm, Lana Khokhobashvili spent years operating at the highest tier of international event execution. She managed events for China&rsquo;s Business Council delegations, where every detail carried diplomatic weight and every misstep carried political consequence. These were not cocktail hours. These were multi-day programs involving government officials, corporate leadership, translators, cultural protocols, and security requirements that most event coordinators have never encountered and would not know how to manage.</p>
+              <p>Before Tamada Group existed as a consulting firm, Lana Chikhladze &mdash; born in Batumi, Georgia &mdash; spent 20+ years operating at the highest tier of international event execution and Georgian hospitality. She grew up in the supra tradition, where the tamada leads the feast and every toast carries meaning. She managed events for China&rsquo;s Business Council delegations, where every detail carried diplomatic weight and every misstep carried political consequence. These were not cocktail hours. These were multi-day programs involving government officials, corporate leadership, translators, cultural protocols, and security requirements that most event coordinators have never encountered and would not know how to manage.</p>
 
               <p>She executed high-stakes weddings in international resort settings where the guest list included public figures and the budget reflected the kind of scrutiny that comes with it. The flower arrangement is not just a centerpiece when the family has a net worth that exceeds your annual revenue. The wine selection is not a suggestion when the table includes a sommelier from Bordeaux. These details matter in a way that most domestic event teams never face, and Lana delivered on every one of them without a department behind her. She was the department.</p>
 
               <p>International corporate conferences followed. Multi-national firms booking resort properties for executive retreats, leadership offsites, and client-facing showcases. The kind of events where the F&amp;B program is not a side note on the agenda but the centerpiece that determines whether the client books again next year. Lana designed the menus, managed the vendor relationships, choreographed the service flow, and handled the inevitable last-minute changes that come when a C-suite executive decides at 4pm that the dinner format needs to shift from plated to family-style for forty-two guests.</p>
 
-              <p>This is not background noise. This is the foundation of everything Tamada Group builds for your event program. When we design your pricing architecture, your upsell sequences, and your staff briefing frameworks, we are drawing on operational experience that most consultants cannot claim. Lana has been in the room. She has been the one making the call. And she has done it at a level of stakes that makes your Saturday night private dining event feel, respectfully, manageable.</p>
+              <p>This is not background noise. This is the foundation of everything Tamada Group builds for your supra event program. When we design your pricing architecture for Georgian feasts, your upsell sequences from standard supra to premium supra with Saperavi wine pairings, and your staff briefing frameworks, we are drawing on operational experience that most consultants cannot claim. Lana has been in the room. She has been the tamada. And she has done it at a level of stakes that makes your Saturday night private dining event feel, respectfully, manageable.</p>
             </div>
 
             <div className="credibility-stats reveal stagger-2">
@@ -112,13 +112,13 @@ export default function EventStrategyPage() {
 
           <div className="problem-grid">
             <div className="problem-copy reveal stagger-1">
-              <p>The typical restaurant treats events as a side business. Someone calls and asks if you can host a birthday party for thirty. The manager says yes, pulls a few tables together, maybe offers a set menu or a prix fixe option that was put together three years ago and has not been updated since. The event happens. It goes fine. The check is decent. Everyone moves on. And the operator never realizes that the same event, with the right pricing structure and upsell architecture, could have generated 40-60% more revenue with zero additional effort.</p>
+              <p>The typical Georgian restaurant treats events as a side business. Someone calls and asks if you can host a supra for thirty. The manager says yes, pulls a few tables together, maybe offers a set Georgian feast menu or a prix fixe option that was put together three years ago and has not been updated since. The event happens. It goes fine. The check is decent. Everyone moves on. And the operator never realizes that the same event, with the right pricing structure and upsell architecture, could have generated 40-60% more revenue with zero additional effort.</p>
 
               <p>This is the pattern we see in nearly every restaurant and hotel we audit. The event capability is there. The demand is there. What is missing is the system. There is no tiered pricing by event category. There is no structured upsell sequence that moves a client from a base package to a premium package through a natural, non-pushy progression. There is no revenue target per event type that gives the team a benchmark to hit. There is no follow-up process that turns a one-time booking into a recurring relationship.</p>
 
               <p>The result is predictable and consistent. Events bring in a fraction of what they should. The operator looks at the event line on the P&amp;L and sees revenue, and that revenue feels like a bonus because it required relatively little marketing spend to generate. But the number is wrong. It is low. And because there is no benchmark, no pricing framework, and no system in place, the operator has no way of knowing how low it actually is.</p>
 
-              <p>We have seen restaurants where the event revenue per cover was less than the regular dining revenue per cover. That should be impossible. Events carry a premium. Guests expect to pay more. They are prepared to pay more. But when you hand them a pricing sheet that was designed by a manager who was afraid of scaring them away, you get exactly what you asked for: the minimum.</p>
+              <p>We have seen Georgian restaurants where the supra event revenue per cover was less than the regular dining revenue per cover. That should be impossible. A full Georgian supra &mdash; with khachapuri, khinkali, chakapuli, lobiani, and Saperavi wine toasts &mdash; carries a premium. Guests expect to pay more for that experience. They are prepared to pay more. But when you hand them a pricing sheet that was designed by a manager who was afraid of scaring them away, you get exactly what you asked for: the minimum.</p>
             </div>
 
             <div className="problem-list reveal stagger-2">
@@ -339,9 +339,9 @@ export default function EventStrategyPage() {
         <div className="container">
           <div className="reveal">
             <div className="section-label">Start Building</div>
-            <h2 className="section-headline">Your Events Should Be Your Highest-Margin Revenue Line. Let&rsquo;s Make Them One.</h2>
+            <h2 className="section-headline">Your Supra Events Should Be Your Highest-Margin Revenue Line. Let&rsquo;s Make Them One.</h2>
             <div className="section-body">
-              <p>Every week without an event revenue system is a week of bookings priced below their potential. We build the pricing, the upsell architecture, the staff frameworks, and the rebooking systems that turn your event program into the most profitable part of your operation.</p>
+              <p>Every week without a supra event revenue system is a week of Georgian feast bookings priced below their potential. We build the pricing, the upsell architecture from standard supra to premium Saperavi-paired experiences, the staff frameworks, and the rebooking systems that turn your event program into the most profitable part of your operation.</p>
             </div>
             <div className="cta-buttons">
               <Link href="/contact" className="btn-primary cta-pulse">Build My Event Revenue System</Link>

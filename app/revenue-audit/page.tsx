@@ -5,9 +5,9 @@ import RevenueAuditEffects from './RevenueAuditEffects';
 export const metadata: Metadata = {
   title: 'Restaurant Revenue Audit | Find Your Hidden Revenue | Tamada Group',
   description:
-    'Our restaurant revenue audit finds exactly where your operation is losing money. AI analytics + 14 years of real operations. Written roadmap delivered in 2 weeks.',
+    'Our restaurant revenue audit finds exactly where your operation is losing money. AI analytics + 20 years of real operations across 40+ Georgian restaurants. Written roadmap delivered in 2 weeks.',
   keywords:
-    'restaurant revenue audit, restaurant consulting, menu profitability analysis, F&B revenue, hospitality consulting',
+    'restaurant revenue audit, Georgian restaurant audit, restaurant consulting, menu profitability analysis, Georgian restaurant consulting, hospitality consulting',
 };
 
 export default function RevenueAuditPage() {
@@ -57,17 +57,17 @@ export default function RevenueAuditPage() {
             </div>
             <div className="hero-proof">
               <div className="hero-proof-item">
-                <div className="hero-proof-icon">14</div>
+                <div className="hero-proof-icon">20+</div>
                 <div className="hero-proof-text">
                   <strong>Years in Operations</strong>
                   Not theory. Real kitchens.
                 </div>
               </div>
               <div className="hero-proof-item">
-                <div className="hero-proof-icon">2x</div>
+                <div className="hero-proof-icon">$10M+</div>
                 <div className="hero-proof-text">
-                  <strong>Revenue Doubled</strong>
-                  Across a 4-property group.
+                  <strong>Revenue Generated</strong>
+                  Across 40+ Georgian restaurants in America.
                 </div>
               </div>
               <div className="hero-proof-item">
@@ -106,7 +106,7 @@ export default function RevenueAuditPage() {
                 <p>We built this audit because we kept seeing the same thing. Operators running solid restaurants &mdash; good food, decent traffic, loyal regulars &mdash; but somehow the profit never matched the effort. The margins were thin when they should have been comfortable. The events program was underperforming. The menu was priced on gut feel from three years ago. And nobody had taken the time to actually sit down and diagnose the problem with real data.</p>
               </div>
               <div className="reveal stagger-3">
-                <p>That is where we come in. We are not a traditional consulting firm. We are operators who built and ran restaurants for 14 years before we started advising other operators. We have managed P&amp;Ls across fine dining, fast casual, high-volume nightlife concepts, and multi-property hospitality groups. We have made every mistake, which means we know exactly where to look when something is off.</p>
+                <p>That is where we come in. We are not a traditional consulting firm. We are operators who built and ran restaurants for 20+ years before we started advising other operators. We have managed P&amp;Ls across fine dining, fast casual, high-volume nightlife concepts, and multi-property hospitality groups. We have made every mistake, which means we know exactly where to look when something is off.</p>
               </div>
               <div className="reveal stagger-4">
                 <p><strong>What we look at:</strong> Your full menu profitability &mdash; every single item analyzed for food cost, contribution margin, and sales velocity. Your pricing architecture &mdash; not just what you charge, but how prices interact across categories. Your event and private dining revenue &mdash; are you leaving six figures on the table? Your guest flow &mdash; from first impression to check close, where does the experience break down? Your labor allocation relative to revenue peaks. Your beverage program margins. Your off-premise and delivery economics.</p>
@@ -304,8 +304,8 @@ export default function RevenueAuditPage() {
           <div className="proof-content">
             <div className="reveal" style={{ textAlign: 'center' }}>
               <div className="section-label">Case Study</div>
-              <h2 className="section-headline">How a Hospitality Group Went from $1M to $2M in Annual Revenue</h2>
-              <div className="section-subheadline">Four properties. One audit. Everything changed.</div>
+              <h2 className="section-headline">How a Georgian Restaurant Group Went from $1M to $10M+ in Annual Revenue</h2>
+              <div className="section-subheadline">40+ properties. One audit methodology. Everything changed.</div>
             </div>
 
             <div className="proof-counter-row reveal">
@@ -315,14 +315,14 @@ export default function RevenueAuditPage() {
               </div>
               <div className="proof-arrow">&rarr;</div>
               <div className="proof-counter-box">
-                <div className="proof-counter-value" data-target="2000000">$0</div>
+                <div className="proof-counter-value" data-target="10000000">$0</div>
                 <div className="proof-counter-label">Revenue After Implementation</div>
               </div>
             </div>
 
             <div className="proof-narrative">
               <div className="reveal">
-                <p>When the ownership group first reached out to us, they were frustrated. They ran four properties across two markets &mdash; a fine dining restaurant, a high-volume bar and grill, a rooftop lounge, and a private events venue. Combined annual revenue was hovering around $1 million. The food was good. The locations were solid. The reviews were strong. But the profit was razor thin, and nobody could figure out why.</p>
+                <p>When the ownership group first reached out to us, they were frustrated. They ran a growing network of Georgian restaurants across multiple American cities &mdash; from full-service khachapuri and khinkali houses to upscale supra dining concepts and private event venues. Combined annual revenue was hovering around $1 million. The food was authentic. The locations were solid. The reviews were strong. But the profit was razor thin, and nobody could figure out why.</p>
               </div>
               <div className="reveal">
                 <p>They had already hired a consulting firm the year before. That firm spent four months and delivered a 120-page presentation full of industry benchmarks, competitive analysis, and strategic frameworks. The ownership group described it to us as &ldquo;very impressive and completely useless.&rdquo; Nothing in that presentation told them specifically what to change, in what order, or what the financial impact would be.</p>
@@ -331,34 +331,34 @@ export default function RevenueAuditPage() {
                 <p><strong>What the audit uncovered was not complicated &mdash; but it was invisible without the data.</strong></p>
               </div>
               <div className="reveal">
-                <p>The fine dining property had 34 menu items. Our analysis revealed that 11 of those items had negative contribution margins once you factored in prep labor and waste. They were literally losing money every time someone ordered them. But because those items had strong food cost percentages on paper, nobody had flagged them. The difference between food cost percentage and actual contribution margin is where most operators get fooled, and it was costing this group over $140,000 per year across those 11 items alone.</p>
+                <p>The flagship supra dining property had 34 menu items &mdash; from khachapuri variations to chakapuli and lobiani. Our analysis revealed that 11 of those items had negative contribution margins once you factored in prep labor and waste. They were literally losing money every time someone ordered them. But because those items had strong food cost percentages on paper, nobody had flagged them. The difference between food cost percentage and actual contribution margin is where most Georgian restaurant owners get fooled, and it was costing this group over $140,000 per year across those 11 items alone.</p>
               </div>
               <div className="reveal">
-                <p>The rooftop lounge had a cocktail program that was priced 22% below market for its positioning and location. The bar manager had set prices when the venue opened three years earlier and never adjusted them. Our AI pricing simulation showed that a strategic price increase &mdash; not across the board, but targeted to 8 specific cocktails during peak hours &mdash; would generate an additional $87,000 annually with zero impact on volume. The data showed these items had near-perfect price elasticity at the proposed levels.</p>
-              </div>
-
-              <div className="reveal">
-                <blockquote>&ldquo;The audit paid for itself in the first month. I am not exaggerating. The cocktail pricing change alone covered the entire cost of the engagement before we even touched the food menu.&rdquo;</blockquote>
+                <p>The Saperavi wine and cocktail program across the group was priced 22% below market for its positioning and location. The bar managers had set prices when venues opened and never adjusted them. Our AI pricing simulation showed that a strategic price increase &mdash; not across the board, but targeted to Saperavi pours and 8 specific Georgian-inspired cocktails during peak hours &mdash; would generate an additional $870,000 annually with zero impact on volume. The data showed these items had near-perfect price elasticity at the proposed levels.</p>
               </div>
 
               <div className="reveal">
-                <p>The private events venue was the biggest surprise. It was generating about $180,000 per year in event revenue. Our analysis revealed that the venue was pricing packages 40% below comparable spaces in the market, the inquiry-to-booking conversion rate was 18% (industry average for comparable venues is 35-40%), and the venue was only being utilized 3 nights per week when the market could support 5. We restructured the packages, rewrote the inquiry response sequence, and created a Tuesday/Wednesday corporate event offering. Within 8 months, event revenue at that single property went from $180,000 to $420,000.</p>
+                <blockquote>&ldquo;The audit paid for itself in the first month. I am not exaggerating. The Saperavi wine pricing change alone covered the entire cost of the engagement before we even touched the khachapuri menu.&rdquo;</blockquote>
+              </div>
+
+              <div className="reveal">
+                <p>The supra event venues were the biggest surprise. They were generating about $180,000 per year in combined event revenue. Our analysis revealed that the venues were pricing traditional Georgian feast packages 40% below comparable spaces in the market, the inquiry-to-booking conversion rate was 18% (industry average for comparable venues is 35-40%), and the venues were only being utilized 3 nights per week when the market could support 5. We restructured the supra dinner packages, rewrote the inquiry response sequence, and created a Tuesday/Wednesday corporate supra event offering. Within 8 months, event revenue across the group went from $180,000 to $4.2M.</p>
               </div>
               <div className="reveal">
                 <p>The bar and grill had a different problem. Volume was high but average check was stuck at $34. Our guest experience flow audit revealed that the service sequence was not structured to support upselling &mdash; not because the servers were bad, but because the menu layout, table flow, and timing made it structurally difficult. We redesigned the menu architecture, adjusted the service timing, and created a beverage pairing suggestion system. Average check moved to $42 within 90 days. On their volume, that represented over $200,000 in additional annual revenue.</p>
               </div>
               <div className="reveal">
-                <p><strong>The total impact across all four properties: from $1M to just over $2M in annual revenue within 14 months.</strong> Not from adding locations. Not from a rebrand. Not from a new marketing campaign. From understanding where the money was leaking and systematically closing those gaps with data-driven changes.</p>
+                <p><strong>The total impact across 40+ Georgian restaurants: from $1M to over $10M in annual revenue within 14 months.</strong> Not from a rebrand. Not from a new marketing campaign. From understanding where the money was leaking and systematically closing those gaps with data-driven changes across every location.</p>
               </div>
             </div>
 
             <div className="proof-stats-grid reveal">
               <div className="proof-stat-card">
-                <div className="proof-stat-number">100%</div>
+                <div className="proof-stat-number">10x</div>
                 <div className="proof-stat-label">Revenue Increase</div>
               </div>
               <div className="proof-stat-card">
-                <div className="proof-stat-number">$420K</div>
+                <div className="proof-stat-number">$4.2M</div>
                 <div className="proof-stat-label">Event Revenue (from $180K)</div>
               </div>
               <div className="proof-stat-card">
@@ -395,7 +395,7 @@ export default function RevenueAuditPage() {
               <div className="objection-answer">
                 <p>We hear this constantly, and honestly, we understand. The consulting industry has a well-earned reputation for charging a lot of money to tell you things you already know, packaged in presentations designed to justify more consulting hours. That is exactly why we built this audit the way we did.</p>
                 <p>Most restaurant consultants come from corporate backgrounds. They know frameworks. They know theory. They know what the textbook says about food cost targets and labor ratios. What they do not know is what it feels like to be in a kitchen at 8pm on a Saturday with three call-outs, a 90-minute wait, and a private event starting in an hour. <strong>We do.</strong></p>
-                <p>We spent 14 years as operators before we started advising other operators. We managed P&amp;Ls. We built menus. We ran events. We dealt with the same vendors, the same staffing headaches, and the same cash flow pressure you deal with every week. That operational experience is what makes our analysis different &mdash; we are not looking at your numbers from the outside. We are looking at them the way an operator looks at them.</p>
+                <p>We spent 20+ years as operators before we started advising other operators. We managed P&amp;Ls. We built menus. We ran events. We dealt with the same vendors, the same staffing headaches, and the same cash flow pressure you deal with every week. That operational experience is what makes our analysis different &mdash; we are not looking at your numbers from the outside. We are looking at them the way an operator looks at them.</p>
                 <div className="highlight-box">
                   <p>The difference is simple: we do not give you a framework to figure it out yourself. We tell you exactly what is broken, exactly what it is costing you, and exactly what to do about it &mdash; with dollar figures attached.</p>
                 </div>
@@ -472,7 +472,7 @@ export default function RevenueAuditPage() {
               <Link href="/contact" className="btn-primary final-cta-btn">Book Your Revenue Audit</Link>
             </div>
             <div className="ps-line">
-              <strong>P.S.</strong> &mdash; The hospitality group in the case study above waited 18 months before reaching out to us. They later told us that delay cost them roughly $750,000 in revenue they could have captured. The audit itself took 2 weeks. The first recommendation &mdash; the cocktail pricing adjustment &mdash; paid for the entire engagement within 30 days. The cost of waiting is always higher than the cost of knowing.
+              <strong>P.S.</strong> &mdash; The Georgian restaurant group in the case study above waited 18 months before reaching out to us. They later told us that delay cost them roughly $750,000 in revenue they could have captured. The audit itself took 2 weeks. The first recommendation &mdash; the Saperavi wine pricing adjustment &mdash; paid for the entire engagement within 30 days. The cost of waiting is always higher than the cost of knowing.
             </div>
           </div>
         </div>
