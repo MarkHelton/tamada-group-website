@@ -1,0 +1,2049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F&B Consulting Services | Restaurant Revenue Strategy | Tamada Group</title>
+    <meta name="description" content="Four ways Tamada Group finds and fixes revenue leaks in restaurants and hotels. AI menu engineering, revenue audits, event strategy, and AI video menus.">
+    <meta name="keywords" content="restaurant consulting services, F&B revenue audit, AI menu engineering, event revenue strategy, AI video menus, hospitality consulting">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* ═══════════════════════════════════════════
+           DESIGN SYSTEM — TAMADA GROUP 2026
+           ═══════════════════════════════════════════ */
+        :root {
+            --bg-primary: #080808;
+            --bg-surface: #111111;
+            --bg-card: #161616;
+            --gold: #C8A951;
+            --gold-light: #E2C47A;
+            --gold-dark: #9A7D35;
+            --wine: #7A1E2E;
+            --text-primary: #EDE8DC;
+            --text-muted: #7A776E;
+            --border-subtle: rgba(200, 169, 81, 0.15);
+            --border-gold: rgba(200, 169, 81, 0.5);
+            --font-display: 'Cormorant Garamond', serif;
+            --font-body: 'Inter', sans-serif;
+            --max-width: 1200px;
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-weight: 300;
+            overflow-x: hidden;
+        }
+
+        /* ═══════════════════════════════════════════
+           UTILITY & ANIMATION SYSTEM
+           ═══════════════════════════════════════════ */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .stagger-1 { transition-delay: 0ms; }
+        .stagger-2 { transition-delay: 180ms; }
+        .stagger-3 { transition-delay: 360ms; }
+        .stagger-4 { transition-delay: 540ms; }
+        .stagger-5 { transition-delay: 720ms; }
+
+        @keyframes lineGrow {
+            from { width: 0; }
+            to { width: 80px; }
+        }
+
+        @keyframes goldPulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(200, 169, 81, 0.4); }
+            50% { box-shadow: 0 0 20px 6px rgba(200, 169, 81, 0.15); }
+        }
+
+        @keyframes shimmer {
+            0% { background-position: -200% center; }
+            100% { background-position: 200% center; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        @keyframes counterGlow {
+            0%, 100% { text-shadow: 0 0 20px rgba(200, 169, 81, 0.3); }
+            50% { text-shadow: 0 0 40px rgba(200, 169, 81, 0.6); }
+        }
+
+        @keyframes wordFadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+                filter: blur(4px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+                filter: blur(0);
+            }
+        }
+
+        @keyframes expandLine {
+            from { transform: scaleX(0); }
+            to { transform: scaleX(1); }
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes dividerGlow {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.7; }
+        }
+
+        @keyframes iconPulse {
+            0%, 100% { transform: scale(1); opacity: 0.7; }
+            50% { transform: scale(1.08); opacity: 1; }
+        }
+
+        @keyframes borderTrace {
+            0% { background-position: 0% 0%; }
+            25% { background-position: 100% 0%; }
+            50% { background-position: 100% 100%; }
+            75% { background-position: 0% 100%; }
+            100% { background-position: 0% 0%; }
+        }
+
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-60px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(60px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes scaleReveal {
+            from { opacity: 0; transform: scale(0.92); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes tickerScroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+
+        /* ═══════════════════════════════════════════
+           NAVIGATION
+           ═══════════════════════════════════════════ */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 20px 0;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .nav.scrolled {
+            background: rgba(8, 8, 8, 0.96);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 14px 0;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .nav-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand a {
+            text-decoration: none;
+        }
+
+        .nav-brand-name {
+            font-family: var(--font-display);
+            font-size: 24px;
+            font-weight: 400;
+            color: var(--gold);
+            letter-spacing: 0.08em;
+            line-height: 1.2;
+        }
+
+        .nav-brand-tagline {
+            font-family: var(--font-body);
+            font-size: 10px;
+            color: var(--text-muted);
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-top: 2px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-family: var(--font-body);
+            font-size: 13px;
+            font-weight: 400;
+            color: var(--text-muted);
+            text-decoration: none;
+            letter-spacing: 0.05em;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--gold);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--gold);
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            font-family: var(--font-body);
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--gold) !important;
+            border: 1px solid var(--border-gold);
+            padding: 10px 24px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .nav-cta::after {
+            display: none !important;
+        }
+
+        .nav-cta:hover {
+            background: var(--gold);
+            color: var(--bg-primary) !important;
+        }
+
+        /* Mobile nav */
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 8px;
+            z-index: 1001;
+        }
+
+        .nav-toggle span {
+            width: 24px;
+            height: 1.5px;
+            background: var(--gold);
+            transition: all 0.3s ease;
+        }
+
+        .nav-toggle.open span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 4px);
+        }
+
+        .nav-toggle.open span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .nav-toggle.open span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -4px);
+        }
+
+        .mobile-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(8, 8, 8, 0.98);
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.4s ease;
+        }
+
+        .mobile-overlay.open {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .mobile-overlay a {
+            font-family: var(--font-display);
+            font-size: 36px;
+            font-weight: 300;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .mobile-overlay a:hover {
+            color: var(--gold);
+        }
+
+        /* ═══════════════════════════════════════════
+           GEORGIAN TICKER
+           ═══════════════════════════════════════════ */
+        .ticker-wrap {
+            position: relative;
+            top: 0;
+            width: 100%;
+            height: 48px;
+            background: #0D0D0D;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid rgba(200, 169, 81, 0.08);
+            z-index: 998;
+            margin-top: 72px;
+        }
+
+        .ticker-track {
+            display: flex;
+            white-space: nowrap;
+            animation: tickerScroll 45s linear infinite;
+        }
+
+        .ticker-track span {
+            font-family: var(--font-body);
+            font-size: 11px;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            padding-right: 48px;
+        }
+
+        .ticker-track .ticker-dot {
+            color: var(--gold-dark);
+            padding: 0 24px;
+        }
+
+        /* ═══════════════════════════════════════════
+           BUTTONS
+           ═══════════════════════════════════════════ */
+        .btn-primary {
+            display: inline-block;
+            font-family: var(--font-body);
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--bg-primary);
+            background: var(--gold);
+            border: 1px solid var(--gold);
+            padding: 16px 40px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .btn-primary:hover {
+            background: var(--gold-light);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(200, 169, 81, 0.3);
+        }
+
+        .btn-primary:hover::before {
+            left: 100%;
+        }
+
+        .btn-secondary {
+            display: inline-block;
+            font-family: var(--font-body);
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--gold);
+            background: transparent;
+            border: 1px solid var(--border-gold);
+            padding: 16px 40px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(200, 169, 81, 0.08);
+            border-color: var(--gold);
+            transform: translateY(-2px);
+        }
+
+        /* ═══════════════════════════════════════════
+           SECTION DEFAULTS
+           ═══════════════════════════════════════════ */
+        .section {
+            padding: 120px 0;
+            position: relative;
+        }
+
+        .section-label {
+            font-family: var(--font-body);
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .section-headline {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 4vw, 52px);
+            font-weight: 300;
+            line-height: 1.15;
+            color: var(--text-primary);
+            margin-bottom: 20px;
+        }
+
+        .section-subheadline {
+            font-family: var(--font-display);
+            font-size: clamp(18px, 2vw, 24px);
+            font-weight: 300;
+            font-style: italic;
+            color: var(--gold);
+            line-height: 1.5;
+            margin-bottom: 24px;
+        }
+
+        .section-body {
+            font-family: var(--font-body);
+            font-size: 16px;
+            font-weight: 300;
+            color: var(--text-primary);
+            line-height: 1.85;
+            max-width: 680px;
+        }
+
+        .section-body p {
+            margin-bottom: 20px;
+        }
+
+        .section-divider {
+            width: 60px;
+            height: 1px;
+            background: var(--gold);
+            margin: 60px 0;
+            opacity: 0.4;
+        }
+
+        /* ═══════════════════════════════════════════
+           HERO — SERVICES PAGE
+           ═══════════════════════════════════════════ */
+        .services-hero {
+            position: relative;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background: var(--bg-primary);
+        }
+
+        .services-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 80% 50% at 20% 60%, rgba(200, 169, 81, 0.04) 0%, transparent 60%),
+                radial-gradient(ellipse 60% 40% at 80% 30%, rgba(122, 30, 46, 0.03) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .services-hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold-dark), transparent);
+            opacity: 0.3;
+        }
+
+        .services-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 860px;
+            padding: 140px 0 100px;
+        }
+
+        .services-hero-label {
+            font-family: var(--font-body);
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 32px;
+            opacity: 0;
+            animation: wordFadeUp 0.6s ease forwards 0.3s;
+        }
+
+        .services-hero-headline {
+            font-family: var(--font-display);
+            font-size: clamp(42px, 5.5vw, 72px);
+            font-weight: 300;
+            line-height: 1.08;
+            letter-spacing: -0.01em;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+
+        .services-hero-headline .word {
+            display: inline-block;
+            opacity: 0;
+            animation: wordFadeUp 0.6s ease forwards;
+        }
+
+        .services-hero-gold-line {
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--gold), var(--gold-dark));
+            margin: 28px 0;
+            animation: lineGrow 0.8s ease forwards 1.2s;
+        }
+
+        .services-hero-body {
+            font-family: var(--font-body);
+            font-size: 17px;
+            font-weight: 300;
+            color: var(--text-primary);
+            line-height: 1.85;
+            max-width: 640px;
+            opacity: 0;
+            animation: wordFadeUp 0.7s ease forwards 1.4s;
+        }
+
+        .services-hero-body p {
+            margin-bottom: 16px;
+        }
+
+        /* Floating geometric accents */
+        .hero-accent {
+            position: absolute;
+            border: 1px solid var(--border-subtle);
+            pointer-events: none;
+            opacity: 0;
+            animation: wordFadeUp 1.2s ease forwards 2s;
+        }
+
+        .hero-accent-1 {
+            width: 200px;
+            height: 200px;
+            top: 15%;
+            right: 8%;
+            transform: rotate(45deg);
+            animation: float 8s ease-in-out infinite;
+            animation-delay: 2s;
+        }
+
+        .hero-accent-2 {
+            width: 120px;
+            height: 120px;
+            bottom: 20%;
+            right: 15%;
+            border-color: rgba(122, 30, 46, 0.15);
+            animation: float 6s ease-in-out infinite;
+            animation-delay: 2.5s;
+        }
+
+        .hero-accent-3 {
+            width: 60px;
+            height: 60px;
+            top: 35%;
+            right: 25%;
+            border-radius: 50%;
+            border-color: rgba(200, 169, 81, 0.1);
+            animation: float 10s ease-in-out infinite;
+            animation-delay: 3s;
+        }
+
+        /* ═══════════════════════════════════════════
+           PROOF BAR — TOP
+           ═══════════════════════════════════════════ */
+        .proof-bar {
+            background: var(--bg-surface);
+            border-top: 1px solid var(--border-subtle);
+            border-bottom: 1px solid var(--border-subtle);
+            padding: 40px 0;
+            overflow: hidden;
+        }
+
+        .proof-bar-inner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .proof-bar-item {
+            text-align: center;
+            min-width: 160px;
+        }
+
+        .proof-bar-value {
+            font-family: var(--font-display);
+            font-size: clamp(36px, 4vw, 52px);
+            font-weight: 300;
+            color: var(--gold);
+            line-height: 1;
+            margin-bottom: 6px;
+            animation: counterGlow 3s ease-in-out infinite;
+        }
+
+        .proof-bar-label {
+            font-family: var(--font-body);
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }
+
+        .proof-bar-divider {
+            width: 1px;
+            height: 48px;
+            background: var(--border-subtle);
+        }
+
+        /* ═══════════════════════════════════════════
+           SERVICE CARDS
+           ═══════════════════════════════════════════ */
+        .services-section {
+            background: var(--bg-primary);
+        }
+
+        .services-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            margin-top: 60px;
+        }
+
+        .service-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(200, 169, 81, 0.08);
+            padding: 48px 40px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            cursor: default;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold-dark), var(--gold), var(--gold-dark));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .service-card::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 50% 0%, rgba(200, 169, 81, 0.03) 0%, transparent 60%);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            pointer-events: none;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(200, 169, 81, 0.2);
+            box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5), 0 0 40px rgba(200, 169, 81, 0.05);
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover::after {
+            opacity: 1;
+        }
+
+        .service-card-number {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            font-family: var(--font-display);
+            font-size: 64px;
+            font-weight: 300;
+            color: rgba(200, 169, 81, 0.06);
+            line-height: 1;
+            transition: color 0.5s ease;
+        }
+
+        .service-card:hover .service-card-number {
+            color: rgba(200, 169, 81, 0.12);
+        }
+
+        .service-card-icon {
+            width: 64px;
+            height: 64px;
+            border: 1px solid var(--border-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 28px;
+            position: relative;
+            z-index: 1;
+            transition: all 0.5s ease;
+        }
+
+        .service-card:hover .service-card-icon {
+            border-color: var(--gold);
+            box-shadow: 0 0 24px rgba(200, 169, 81, 0.15);
+        }
+
+        .service-card-icon svg {
+            width: 28px;
+            height: 28px;
+            stroke: var(--gold);
+            fill: none;
+            stroke-width: 1.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .service-card-tag {
+            display: inline-block;
+            font-family: var(--font-body);
+            font-size: 10px;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--gold);
+            background: rgba(200, 169, 81, 0.08);
+            border: 1px solid rgba(200, 169, 81, 0.15);
+            padding: 6px 16px;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-card-name {
+            font-family: var(--font-display);
+            font-size: clamp(26px, 3vw, 34px);
+            font-weight: 300;
+            color: var(--text-primary);
+            line-height: 1.2;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-card-desc {
+            font-family: var(--font-body);
+            font-size: 15px;
+            font-weight: 300;
+            color: var(--text-primary);
+            line-height: 1.85;
+            margin-bottom: 24px;
+            position: relative;
+            z-index: 1;
+            opacity: 0.85;
+        }
+
+        .service-card-stat {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 20px 0;
+            border-top: 1px solid var(--border-subtle);
+            border-bottom: 1px solid var(--border-subtle);
+            margin-bottom: 28px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-card-stat-value {
+            font-family: var(--font-display);
+            font-size: 36px;
+            font-weight: 300;
+            color: var(--gold);
+            line-height: 1;
+            white-space: nowrap;
+        }
+
+        .service-card-stat-text {
+            font-family: var(--font-body);
+            font-size: 13px;
+            font-weight: 400;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        .service-card-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-family: var(--font-body);
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--gold);
+            text-decoration: none;
+            position: relative;
+            z-index: 1;
+            transition: all 0.3s ease;
+        }
+
+        .service-card-link::after {
+            content: '';
+            display: inline-block;
+            width: 0;
+            height: 1px;
+            background: var(--gold);
+            transition: width 0.3s ease;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+        }
+
+        .service-card-link:hover {
+            color: var(--gold-light);
+        }
+
+        .service-card-link:hover::after {
+            width: 100%;
+        }
+
+        .service-card-link .arrow {
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card-link:hover .arrow {
+            transform: translateX(6px);
+        }
+
+        /* ═══════════════════════════════════════════
+           DECISION GUIDE
+           ═══════════════════════════════════════════ */
+        .decision-section {
+            background: var(--bg-surface);
+            border-top: 1px solid var(--border-subtle);
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .decision-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 28px;
+            margin-top: 60px;
+        }
+
+        .decision-card {
+            background: var(--bg-card);
+            padding: 36px 32px;
+            border-left: 3px solid var(--wine);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .decision-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(122, 30, 46, 0.03));
+            pointer-events: none;
+        }
+
+        .decision-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 50px rgba(0, 0, 0, 0.4);
+            border-left-color: var(--gold);
+        }
+
+        .decision-card-condition {
+            font-family: var(--font-display);
+            font-size: clamp(18px, 2vw, 22px);
+            font-weight: 300;
+            font-style: italic;
+            color: var(--text-primary);
+            line-height: 1.4;
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .decision-card-condition::before {
+            content: '"';
+            color: var(--gold);
+            font-size: 1.3em;
+        }
+
+        .decision-card-condition::after {
+            content: '"';
+            color: var(--gold);
+            font-size: 1.3em;
+        }
+
+        .decision-card-arrow {
+            font-family: var(--font-body);
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .decision-card-recommendation {
+            position: relative;
+            z-index: 1;
+        }
+
+        .decision-card-recommendation a {
+            font-family: var(--font-display);
+            font-size: clamp(22px, 2.5vw, 28px);
+            font-weight: 400;
+            color: var(--gold);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .decision-card-recommendation a:hover {
+            color: var(--gold-light);
+        }
+
+        .decision-card-desc {
+            font-family: var(--font-body);
+            font-size: 14px;
+            font-weight: 300;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-top: 12px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ═══════════════════════════════════════════
+           OBJECTION HANDLING
+           ═══════════════════════════════════════════ */
+        .objections-section {
+            background: var(--bg-primary);
+        }
+
+        .objections-list {
+            margin-top: 60px;
+        }
+
+        .objection-item {
+            padding: 48px 0;
+            border-bottom: 1px solid var(--border-subtle);
+            position: relative;
+        }
+
+        .objection-item:first-child {
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        .objection-question {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 28px;
+            cursor: default;
+        }
+
+        .objection-q-mark {
+            font-family: var(--font-display);
+            font-size: 48px;
+            font-weight: 300;
+            color: var(--wine);
+            line-height: 1;
+            flex-shrink: 0;
+            opacity: 0.7;
+        }
+
+        .objection-q-text {
+            font-family: var(--font-display);
+            font-size: clamp(22px, 2.5vw, 30px);
+            font-weight: 300;
+            font-style: italic;
+            color: var(--text-primary);
+            line-height: 1.35;
+            padding-top: 8px;
+        }
+
+        .objection-answer {
+            padding-left: 68px;
+            max-width: 780px;
+        }
+
+        .objection-answer p {
+            font-family: var(--font-body);
+            font-size: 16px;
+            font-weight: 300;
+            color: var(--text-primary);
+            line-height: 1.85;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .objection-answer .answer-highlight {
+            font-family: var(--font-display);
+            font-size: 20px;
+            font-weight: 400;
+            font-style: italic;
+            color: var(--gold);
+            line-height: 1.5;
+            padding-left: 20px;
+            border-left: 2px solid var(--gold-dark);
+            margin: 28px 0;
+        }
+
+        /* ═══════════════════════════════════════════
+           CTA SECTION
+           ═══════════════════════════════════════════ */
+        .cta-section {
+            background: var(--bg-surface);
+            border-top: 1px solid var(--border-subtle);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 50% 50% at 50% 50%, rgba(200, 169, 81, 0.04) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-headline {
+            font-family: var(--font-display);
+            font-size: clamp(28px, 3.5vw, 46px);
+            font-weight: 300;
+            color: var(--text-primary);
+            line-height: 1.2;
+            margin-bottom: 24px;
+        }
+
+        .cta-subtext {
+            font-family: var(--font-body);
+            font-size: 17px;
+            font-weight: 300;
+            color: var(--text-muted);
+            line-height: 1.7;
+            max-width: 560px;
+            margin: 0 auto 40px;
+        }
+
+        .cta-btn {
+            animation: goldPulse 3s ease-in-out infinite;
+        }
+
+        /* ═══════════════════════════════════════════
+           FOOTER
+           ═══════════════════════════════════════════ */
+        .footer {
+            background: #040404;
+            border-top: 1px solid var(--border-subtle);
+            padding: 60px 0 40px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        .footer-brand p {
+            font-family: var(--font-body);
+            font-size: 13px;
+            font-weight: 300;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .footer-social a {
+            width: 36px;
+            height: 36px;
+            border: 1px solid var(--border-subtle);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .footer-social a:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+
+        .footer-center {
+            text-align: center;
+        }
+
+        .footer-locations {
+            font-family: var(--font-body);
+            font-size: 12px;
+            font-weight: 400;
+            color: var(--text-muted);
+            letter-spacing: 0.08em;
+            margin-bottom: 12px;
+        }
+
+        .footer-tagline {
+            font-family: var(--font-display);
+            font-size: 14px;
+            font-weight: 300;
+            font-style: italic;
+            color: var(--text-muted);
+        }
+
+        .footer-right {
+            text-align: right;
+        }
+
+        .footer-right .btn-secondary {
+            font-size: 11px;
+            padding: 10px 24px;
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+
+        .footer-contact-info {
+            font-family: var(--font-body);
+            font-size: 13px;
+            font-weight: 300;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        .footer-contact-info a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-contact-info a:hover {
+            color: var(--gold);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(200, 169, 81, 0.06);
+        }
+
+        .footer-bottom p {
+            font-family: var(--font-body);
+            font-size: 11px;
+            color: var(--text-muted);
+            opacity: 0.5;
+        }
+
+        /* ═══════════════════════════════════════════
+           CURSOR GLOW EFFECT
+           ═══════════════════════════════════════════ */
+        .cursor-glow {
+            position: fixed;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(200, 169, 81, 0.04) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            transition: opacity 0.3s ease;
+            opacity: 0;
+        }
+
+        .cursor-glow.visible {
+            opacity: 1;
+        }
+
+        /* Page progress bar */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--gold-dark), var(--gold), var(--gold-light));
+            z-index: 10000;
+            width: 0%;
+            transition: width 0.1s linear;
+        }
+
+        /* Grain texture overlay */
+        .grain {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 9998;
+            opacity: 0.025;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+            background-size: 128px 128px;
+        }
+
+        /* ═══════════════════════════════════════════
+           RESPONSIVE
+           ═══════════════════════════════════════════ */
+        @media (max-width: 1024px) {
+            .services-cards {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .decision-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .proof-bar-inner {
+                gap: 32px;
+            }
+
+            .hero-accent {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .nav-toggle {
+                display: flex;
+            }
+
+            .services-hero-content {
+                padding: 100px 0 60px;
+            }
+
+            .section {
+                padding: 80px 0;
+            }
+
+            .service-card {
+                padding: 36px 28px;
+            }
+
+            .service-card-number {
+                font-size: 48px;
+                top: 28px;
+                right: 28px;
+            }
+
+            .objection-answer {
+                padding-left: 0;
+            }
+
+            .objection-q-mark {
+                display: none;
+            }
+
+            .proof-bar-inner {
+                flex-direction: column;
+                gap: 24px;
+            }
+
+            .proof-bar-divider {
+                width: 48px;
+                height: 1px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 32px;
+            }
+
+            .footer-right {
+                text-align: center;
+            }
+
+            .footer-social {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .services-hero-headline {
+                font-size: clamp(32px, 8vw, 42px);
+            }
+
+            .service-card-stat {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+
+            .decision-card {
+                padding: 28px 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Grain texture -->
+    <div class="grain"></div>
+
+    <!-- Page progress bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Cursor glow effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- ═══════════════════════════════════════════
+         NAVIGATION
+         ═══════════════════════════════════════════ -->
+    <nav class="nav" id="mainNav">
+        <div class="nav-inner">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <div class="nav-brand-name">Tamada Group</div>
+                    <div class="nav-brand-tagline">Food &amp; Beverage Revenue Agency</div>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="about.html#team">Team</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="ai-video-menus.html">AI Video</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="contact.html" class="nav-cta">Book Strategy Call</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile overlay -->
+    <div class="mobile-overlay" id="mobileOverlay">
+        <a href="about.html">About</a>
+        <a href="about.html#team">Team</a>
+        <a href="services.html">Services</a>
+        <a href="ai-video-menus.html">AI Video</a>
+        <a href="results.html">Results</a>
+        <a href="contact.html">Book Strategy Call</a>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         GEORGIAN TICKER
+         ═══════════════════════════════════════════ -->
+    <div class="ticker-wrap">
+        <div class="ticker-track" id="tickerTrack">
+            <span>In Georgian culture, the Tamada is the master of the feast — the one who ensures every guest feels extraordinary and every moment is intentional.</span>
+            <span class="ticker-dot">•</span>
+            <span>That is what we do for your revenue.</span>
+            <span class="ticker-dot">•</span>
+            <span>Tamada Group — Where Georgian hospitality meets AI-powered restaurant revenue.</span>
+            <span class="ticker-dot">•</span>
+            <span>In Georgian culture, the Tamada is the master of the feast — the one who ensures every guest feels extraordinary and every moment is intentional.</span>
+            <span class="ticker-dot">•</span>
+            <span>That is what we do for your revenue.</span>
+            <span class="ticker-dot">•</span>
+            <span>Tamada Group — Where Georgian hospitality meets AI-powered restaurant revenue.</span>
+            <span class="ticker-dot">•</span>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         HERO SECTION
+         ═══════════════════════════════════════════ -->
+    <section class="services-hero" id="hero">
+        <div class="container">
+            <div class="services-hero-content">
+                <div class="services-hero-label">Our Services</div>
+
+                <h1 class="services-hero-headline" id="heroHeadline">
+                    Four Ways We Find Money You Didn't Know Was There.
+                </h1>
+
+                <div class="services-hero-gold-line"></div>
+
+                <div class="services-hero-body">
+                    <p>Most restaurants leave between 15% and 30% of their potential revenue on the table. Not because of bad food or a weak team — but because the systems behind the operation were never designed to capture every available dollar.</p>
+                    <p>We built four distinct services around the revenue leaks we see most often. Each one works independently. Together, they form a complete revenue architecture. Every engagement starts with understanding where you are, what is costing you money, and what will move the needle fastest.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating accents -->
+        <div class="hero-accent hero-accent-1"></div>
+        <div class="hero-accent hero-accent-2"></div>
+        <div class="hero-accent hero-accent-3"></div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PROOF BAR — TOP
+         ═══════════════════════════════════════════ -->
+    <div class="proof-bar">
+        <div class="container">
+            <div class="proof-bar-inner reveal">
+                <div class="proof-bar-item">
+                    <div class="proof-bar-value" data-count="14" data-suffix="+">14+</div>
+                    <div class="proof-bar-label">Years in F&B Operations</div>
+                </div>
+                <div class="proof-bar-divider"></div>
+                <div class="proof-bar-item">
+                    <div class="proof-bar-value">$1M &rarr; $2M</div>
+                    <div class="proof-bar-label">Revenue Doubled</div>
+                </div>
+                <div class="proof-bar-divider"></div>
+                <div class="proof-bar-item">
+                    <div class="proof-bar-value" data-count="18" data-suffix="%">18%</div>
+                    <div class="proof-bar-label">Average AOV Increase</div>
+                </div>
+                <div class="proof-bar-divider"></div>
+                <div class="proof-bar-item">
+                    <div class="proof-bar-value" data-count="4">4</div>
+                    <div class="proof-bar-label">Properties Transformed</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         SERVICE CARDS
+         ═══════════════════════════════════════════ -->
+    <section class="section services-section" id="services">
+        <div class="container">
+            <div class="section-label reveal">What We Do</div>
+            <h2 class="section-headline reveal">Four services. One goal:<br>find the revenue you are missing.</h2>
+            <p class="section-subheadline reveal">Each engagement is scoped to your operation, your numbers, and your timeline.</p>
+
+            <div class="services-cards">
+
+                <!-- Card 1: Revenue Audit -->
+                <div class="service-card reveal stagger-1">
+                    <div class="service-card-number">01</div>
+                    <div class="service-card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 14l2 2 4-4"/></svg>
+                    </div>
+                    <div class="service-card-tag">Diagnostic</div>
+                    <h3 class="service-card-name">The Revenue Audit</h3>
+                    <div class="service-card-desc">
+                        <p>Before we recommend anything, we need to see what is actually happening inside your operation. The Revenue Audit is a comprehensive diagnostic that maps every dollar flowing through your restaurant or hotel F&B program — from menu pricing and ticket averages to labor scheduling, event capture rates, and per-seat profitability.</p>
+                        <p>Most operators know something is off. They can feel it in the gap between how busy the floor looks and what the P&L actually says. The audit closes that gap with data. We examine your POS reports, menu mix analyses, cost structures, staffing models, and guest flow patterns. We interview your management team. We sit in your dining room during service. And then we build a prioritized roadmap — not a 60-page report that sits in a drawer, but a clear, ranked list of the five to seven changes that will recover the most revenue in the least time.</p>
+                        <p>This is where every engagement should start. You cannot fix what you have not measured, and most operators are making decisions based on instinct when the data is sitting right there in their systems, unread.</p>
+                    </div>
+                    <div class="service-card-stat">
+                        <div class="service-card-stat-value">2 weeks</div>
+                        <div class="service-card-stat-text">Average time from kickoff to a completed roadmap with ranked revenue opportunities</div>
+                    </div>
+                    <a href="revenue-audit.html" class="service-card-link">Learn More <span class="arrow">&rarr;</span></a>
+                </div>
+
+                <!-- Card 2: AI Menu Engineering -->
+                <div class="service-card reveal stagger-2">
+                    <div class="service-card-number">02</div>
+                    <div class="service-card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <div class="service-card-tag">Optimization</div>
+                    <h3 class="service-card-name">AI Menu Engineering</h3>
+                    <div class="service-card-desc">
+                        <p>Your menu is not a list of dishes. It is the single most powerful sales tool in your operation — the one piece of marketing that 100% of your guests interact with, usually for less than 90 seconds. Most menus are designed by chefs who think about food and handed to graphic designers who think about aesthetics. Neither is thinking about margin architecture, visual hierarchy for high-profit items, or the psychology of how a guest's eye actually moves across a page.</p>
+                        <p>Our AI Menu Engineering service rebuilds your menu from the economics up. We analyze your current menu mix data to identify which items are stars (high margin, high popularity), which are puzzles (high margin, low popularity), which are workhorses (low margin, high popularity), and which are dead weight. Then we restructure descriptions, placement, pricing, and visual anchoring to shift guest behavior toward the items that make you money — without raising prices or removing dishes your regulars love.</p>
+                        <p>The difference between a menu that was "designed" and a menu that was engineered is typically 12% to 18% in average check size. That is not a projection. That is what we have measured across multiple properties after implementation.</p>
+                    </div>
+                    <div class="service-card-stat">
+                        <div class="service-card-stat-value">18%</div>
+                        <div class="service-card-stat-text">Measured average order value increase after AI-driven menu restructuring</div>
+                    </div>
+                    <a href="menu-engineering.html" class="service-card-link">Learn More <span class="arrow">&rarr;</span></a>
+                </div>
+
+                <!-- Card 3: Event & F&B Revenue Strategy -->
+                <div class="service-card reveal stagger-3">
+                    <div class="service-card-number">03</div>
+                    <div class="service-card-icon">
+                        <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/></svg>
+                    </div>
+                    <div class="service-card-tag">Revenue System</div>
+                    <h3 class="service-card-name">Event &amp; F&B Revenue Strategy</h3>
+                    <div class="service-card-desc">
+                        <p>Events are where restaurants and hotels leave the most money on the table — and where the opportunity is largest. Private dining, corporate buyouts, holiday programming, prix-fixe weekends, chef's table experiences, wine dinners, seasonal activations. Most operations treat events as one-off requests that get handled when they come in. That is not a strategy. That is order-taking.</p>
+                        <p>We build event revenue systems. That means creating a 12-month programming calendar, developing tiered pricing models that protect margin while giving sales teams flexibility, writing the proposals and BEOs that close deals faster, training your team on upselling and package structuring, and building the follow-up sequences that turn a one-time booking into a recurring relationship. We also audit your current event operations to find the gaps — the inquiries that never got responses, the proposals that underpriced the room, the holiday weekends that could have generated three times what they did.</p>
+                        <p>When events go from reactive to systematic, the revenue impact is not incremental. It is transformational. We have seen properties add six figures in annual event revenue within the first quarter of implementation.</p>
+                    </div>
+                    <div class="service-card-stat">
+                        <div class="service-card-stat-value">$1M+</div>
+                        <div class="service-card-stat-text">Annual event revenue generated for a single hospitality group across four properties</div>
+                    </div>
+                    <a href="event-strategy.html" class="service-card-link">Learn More <span class="arrow">&rarr;</span></a>
+                </div>
+
+                <!-- Card 4: AI Video Menu Production -->
+                <div class="service-card reveal stagger-4">
+                    <div class="service-card-number">04</div>
+                    <div class="service-card-icon">
+                        <svg viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+                    </div>
+                    <div class="service-card-tag">Visual Selling</div>
+                    <h3 class="service-card-name">AI Video Menu Production</h3>
+                    <div class="service-card-desc">
+                        <p>Static menus describe food. Video menus sell it. This is the difference between reading about a dish and watching it arrive at the table — the sear, the steam, the pour, the plating. Guests do not order based on rational evaluation. They order based on desire. And video creates desire in a way that no description, no matter how well-written, can replicate.</p>
+                        <p>Our AI Video Menu Production service creates cinematic, short-form video content for your highest-margin items. These are not amateur clips shot on a phone. They are professionally produced, AI-enhanced visual stories that can be embedded in digital menus, displayed on tabletop tablets, featured on your website, and deployed across social channels. Each video is engineered to highlight the sensory qualities that drive ordering decisions — texture, movement, color, and the moment a dish comes together.</p>
+                        <p>The ROI is immediate and measurable. Properties using AI video menus have seen a 22% increase in orders for featured items. When your guest can see the wagyu being torched tableside before they order it, the upsell conversation is already over. They want it.</p>
+                    </div>
+                    <div class="service-card-stat">
+                        <div class="service-card-stat-value">22%</div>
+                        <div class="service-card-stat-text">Increase in orders for items featured with AI-produced video content</div>
+                    </div>
+                    <a href="ai-video-menus.html" class="service-card-link">Learn More <span class="arrow">&rarr;</span></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         DECISION GUIDE
+         ═══════════════════════════════════════════ -->
+    <section class="section decision-section" id="decision-guide">
+        <div class="container">
+            <div class="section-label reveal">Decision Guide</div>
+            <h2 class="section-headline reveal">Which Service Is Right For You?</h2>
+            <p class="section-subheadline reveal">Start with the situation that sounds most like yours.</p>
+
+            <div class="decision-grid">
+
+                <div class="decision-card reveal stagger-1">
+                    <div class="decision-card-condition">We have never had a formal revenue review of our operation</div>
+                    <div class="decision-card-arrow">We recommend &darr;</div>
+                    <div class="decision-card-recommendation">
+                        <a href="revenue-audit.html">The Revenue Audit</a>
+                    </div>
+                    <div class="decision-card-desc">This is where every engagement should start. Before optimizing anything, you need to see where the money is actually going — and where it is not. The audit gives you a ranked list of opportunities so you know exactly what to fix first and what it is worth.</div>
+                </div>
+
+                <div class="decision-card reveal stagger-2">
+                    <div class="decision-card-condition">Our menu has not been meaningfully updated in two or more years</div>
+                    <div class="decision-card-arrow">We recommend &darr;</div>
+                    <div class="decision-card-recommendation">
+                        <a href="menu-engineering.html">AI Menu Engineering</a>
+                    </div>
+                    <div class="decision-card-desc">If your menu layout, pricing structure, and item positioning have not been reworked based on current sales data, you are almost certainly leaving 12% to 18% of potential check average on the table. Menu engineering is the highest-ROI change most restaurants can make.</div>
+                </div>
+
+                <div class="decision-card reveal stagger-3">
+                    <div class="decision-card-condition">Our events and private dining are underperforming or feel reactive</div>
+                    <div class="decision-card-arrow">We recommend &darr;</div>
+                    <div class="decision-card-recommendation">
+                        <a href="event-strategy.html">Event &amp; F&B Revenue Strategy</a>
+                    </div>
+                    <div class="decision-card-desc">If your event calendar has gaps, if proposals go out late or underpriced, or if you do not have a 12-month programming plan, there is significant untapped revenue waiting. Events are the fastest way to add six-figure revenue to an operation that already has the physical space.</div>
+                </div>
+
+                <div class="decision-card reveal stagger-4">
+                    <div class="decision-card-condition">We want to modernize how guests experience our menu</div>
+                    <div class="decision-card-arrow">We recommend &darr;</div>
+                    <div class="decision-card-recommendation">
+                        <a href="ai-video-menus.html">AI Video Menu Production</a>
+                    </div>
+                    <div class="decision-card-desc">If you are looking for a way to increase orders on high-margin items, differentiate your brand, and give guests a reason to share your restaurant on social media, video menus are the most forward-looking investment you can make. The visual sell outperforms the written sell every time.</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         OBJECTION HANDLING
+         ═══════════════════════════════════════════ -->
+    <section class="section objections-section" id="objections">
+        <div class="container">
+            <div class="section-label reveal">Before You Decide</div>
+            <h2 class="section-headline reveal">Questions We Hear Before Every Engagement</h2>
+            <p class="section-subheadline reveal">The honest answers, not the sales pitch.</p>
+
+            <div class="objections-list">
+
+                <!-- Objection 1 -->
+                <div class="objection-item reveal">
+                    <div class="objection-question">
+                        <div class="objection-q-mark">Q</div>
+                        <div class="objection-q-text">"I already tried a consultant and it didn't work."</div>
+                    </div>
+                    <div class="objection-answer">
+                        <p>We hear this more than any other objection, and it is almost always valid. Most hospitality consultants bring frameworks borrowed from other industries — retail playbooks, corporate restructuring templates, MBA case studies — and try to force them onto a restaurant floor. They spend weeks gathering data, produce a dense report full of jargon, and leave you with recommendations that sound smart in a conference room but fall apart during a Friday night rush. The engagement ends, nothing changes, and you are left feeling like you wasted money confirming what you already suspected.</p>
+                        <p>Lana did not study hospitality in a textbook. She ran operations for 14 years. She has been the person managing the floor during a 300-cover night, renegotiating vendor contracts at 6 AM, training a new server section while rewriting the wine program. When she walks into your operation, she is not observing from the outside. She is reading the floor the way an operator reads it — seeing the timing gaps, the menu blind spots, the labor inefficiencies, and the missed upsell moments that only someone who has done the job would recognize.</p>
+                        <div class="answer-highlight">The difference is not the framework. It is the fact that every recommendation comes from someone who has personally executed it in a live operation, under real pressure, with real stakes.</div>
+                        <p>We also do not disappear after delivering a report. Implementation support is built into every engagement because a recommendation without execution is just expensive advice.</p>
+                    </div>
+                </div>
+
+                <!-- Objection 2 -->
+                <div class="objection-item reveal">
+                    <div class="objection-question">
+                        <div class="objection-q-mark">Q</div>
+                        <div class="objection-q-text">"I can't afford a consultant right now."</div>
+                    </div>
+                    <div class="objection-answer">
+                        <p>That is a completely understandable concern, and it is one we take seriously. Restaurant margins are thin. Cash flow is unpredictable. The idea of writing a check to a consultant when you are trying to make payroll feels counterintuitive at best and reckless at worst. We would never tell you that concern is not valid.</p>
+                        <p>But here is what we would ask you to consider: what is inaction costing you right now? If your menu is underpriced or poorly structured, you are losing 12% to 18% of potential revenue on every single guest, every single night. If your events are reactive instead of systematic, you are leaving five to six figures of annual revenue uncaptured. If your labor model does not match your revenue patterns, you are paying for hours that are not producing dollars. These are not future costs. They are current costs. They are on your P&L right now, hiding in plain sight.</p>
+                        <div class="answer-highlight">The Revenue Audit is specifically designed to pay for itself within the first month. We identify opportunities that can be acted on immediately — pricing adjustments, menu repositioning, scheduling changes — that generate returns before our invoice is due.</div>
+                        <p>We structure our engagements so the investment is never a leap of faith. It is a calculated decision where the math is visible before you commit. If the numbers do not make sense, we will tell you. We would rather have an honest conversation now than a disappointed client later.</p>
+                    </div>
+                </div>
+
+                <!-- Objection 3 -->
+                <div class="objection-item reveal">
+                    <div class="objection-question">
+                        <div class="objection-q-mark">Q</div>
+                        <div class="objection-q-text">"I don't have time for a big consulting project."</div>
+                    </div>
+                    <div class="objection-answer">
+                        <p>Neither do we. And neither does any operator who is actually running a restaurant. The last thing you need is a consultant who schedules three-hour discovery sessions, requests access to every system you own, sends 40-question intake forms, and then takes two months to deliver a 60-page deck that nobody reads. That model exists because it justifies large fees, not because it produces better outcomes.</p>
+                        <p>The Revenue Audit delivers a complete, prioritized roadmap in two weeks. The process requires approximately four to five hours of your time total — a 90-minute walkthrough with your team, access to your POS data (which we pull ourselves), and a final presentation where we walk you through every finding and recommendation. That is it. No ongoing meetings. No weekly check-ins. No deliverables that require you to hire someone to interpret them.</p>
+                        <div class="answer-highlight">We built our process for operators, not for corporate boards. Everything is designed to minimize your time investment and maximize the speed to impact. If a recommendation cannot be explained in plain language and acted on within 30 days, we do not include it.</div>
+                        <p>The reality is that the time you are spending right now managing around revenue problems — adjusting menus by instinct, guessing at event pricing, wondering why the check average will not move — is more time than the audit takes. The difference is that the audit ends with answers. The alternative is another year of the same questions.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PROOF BAR — BOTTOM
+         ═══════════════════════════════════════════ -->
+    <div class="proof-bar">
+        <div class="container">
+            <div class="proof-bar-inner reveal">
+                <div class="proof-bar-item">
+                    <div class="proof-bar-value">14 years</div>
+                    <div class="proof-bar-label">Hands-On F&B Experience</div>
+                </div>
+                <div class="proof-bar-divider"></div>
+                <div class="proof-bar-item">
+                    <div class="proof-bar-value">$1M &rarr; $2M</div>
+                    <div class="proof-bar-label">Documented Revenue Growth</div>
+                </div>
+                <div class="proof-bar-divider"></div>
+                <div class="proof-bar-item">
+                    <div class="proof-bar-value">18% AOV</div>
+                    <div class="proof-bar-label">Average Check Increase</div>
+                </div>
+                <div class="proof-bar-divider"></div>
+                <div class="proof-bar-item">
+                    <div class="proof-bar-value">2 weeks</div>
+                    <div class="proof-bar-label">Audit to Roadmap</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         CTA SECTION
+         ═══════════════════════════════════════════ -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content reveal">
+                <div class="section-label">Ready to Start?</div>
+                <h2 class="cta-headline">Not sure where to start?<br>The first call is free.</h2>
+                <p class="cta-subtext">No pitch deck. No pressure. Just a conversation about where your operation is today, where it could be, and which service — if any — would get you there fastest.</p>
+                <a href="contact.html" class="btn-primary cta-btn">Book A Free Strategy Call</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         FOOTER
+         ═══════════════════════════════════════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <p>&copy; 2026 Tamada Group<br>Food &amp; Beverage Revenue Agency</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="mailto:lana@tamadagroup.com" aria-label="Email">&#9993;</a>
+                    </div>
+                </div>
+                <div class="footer-center">
+                    <div class="footer-locations">Las Vegas &middot; Miami &middot; Fort Lauderdale &middot; San Diego &middot; International</div>
+                    <div class="footer-tagline">Rooted in Georgian hospitality. Built for the world.</div>
+                </div>
+                <div class="footer-right">
+                    <a href="contact.html" class="btn-secondary">Book A Strategy Call</a>
+                    <div class="footer-contact-info">
+                        <a href="mailto:lana@tamadagroup.com">lana@tamadagroup.com</a><br>
+                        <a href="tel:+15550000000">+1 (555) 000-0000</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Tamada Group — Where Georgian Hospitality Meets AI-Powered Revenue Strategy</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ═══════════════════════════════════════════
+         JAVASCRIPT — ALL ANIMATIONS & INTERACTIONS
+         ═══════════════════════════════════════════ -->
+    <script>
+        // ═══════════════════════════════════════════
+        // INTERSECTION OBSERVER — REVEAL ON SCROLL
+        // ═══════════════════════════════════════════
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.15,
+            rootMargin: '0px 0px -80px 0px'
+        });
+
+        document.querySelectorAll('.reveal').forEach(el => {
+            revealObserver.observe(el);
+        });
+
+        // ═══════════════════════════════════════════
+        // STICKY NAV — TRANSPARENT TO DARK ON SCROLL
+        // ═══════════════════════════════════════════
+        const nav = document.getElementById('mainNav');
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            if (scrollY > 80) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+            lastScroll = scrollY;
+        }, { passive: true });
+
+        // ═══════════════════════════════════════════
+        // HERO HEADLINE — WORD-BY-WORD ANIMATION
+        // ═══════════════════════════════════════════
+        const heroHeadline = document.getElementById('heroHeadline');
+        if (heroHeadline) {
+            const text = heroHeadline.textContent.trim();
+            heroHeadline.innerHTML = text.split(' ').map((word, i) =>
+                `<span class="word" style="animation-delay: ${0.4 + i * 0.08}s">${word}</span>`
+            ).join(' ');
+        }
+
+        // ═══════════════════════════════════════════
+        // PROGRESS BAR
+        // ═══════════════════════════════════════════
+        const progressBar = document.getElementById('progressBar');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = (scrollTop / docHeight) * 100;
+            progressBar.style.width = progress + '%';
+        }, { passive: true });
+
+        // ═══════════════════════════════════════════
+        // MOBILE NAV TOGGLE
+        // ═══════════════════════════════════════════
+        const navToggle = document.getElementById('navToggle');
+        const mobileOverlay = document.getElementById('mobileOverlay');
+
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('open');
+            mobileOverlay.classList.toggle('open');
+            document.body.style.overflow = mobileOverlay.classList.contains('open') ? 'hidden' : '';
+        });
+
+        mobileOverlay.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navToggle.classList.remove('open');
+                mobileOverlay.classList.remove('open');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // ═══════════════════════════════════════════
+        // CURSOR GLOW EFFECT
+        // ═══════════════════════════════════════════
+        const cursorGlow = document.getElementById('cursorGlow');
+        let mouseTimer;
+
+        document.addEventListener('mousemove', (e) => {
+            cursorGlow.style.left = e.clientX + 'px';
+            cursorGlow.style.top = e.clientY + 'px';
+            cursorGlow.classList.add('visible');
+
+            clearTimeout(mouseTimer);
+            mouseTimer = setTimeout(() => {
+                cursorGlow.classList.remove('visible');
+            }, 2000);
+        });
+
+        if ('ontouchstart' in window) {
+            cursorGlow.style.display = 'none';
+        }
+
+        // ═══════════════════════════════════════════
+        // MAGNETIC BUTTON HOVER EFFECT
+        // ═══════════════════════════════════════════
+        document.querySelectorAll('.btn-primary, .btn-secondary, .service-card-link').forEach(btn => {
+            btn.addEventListener('mousemove', (e) => {
+                const rect = btn.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
+            });
+
+            btn.addEventListener('mouseleave', () => {
+                btn.style.transform = '';
+            });
+        });
+
+        // ═══════════════════════════════════════════
+        // SERVICE CARD — PARALLAX TILT ON HOVER
+        // ═══════════════════════════════════════════
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width;
+                const y = (e.clientY - rect.top) / rect.height;
+                const rotateX = (y - 0.5) * -6;
+                const rotateY = (x - 0.5) * 6;
+                card.style.transform = `translateY(-8px) perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+                card.style.transition = 'all 0.5s cubic-bezier(0.16, 1, 0.3, 1)';
+            });
+
+            card.addEventListener('mouseenter', () => {
+                card.style.transition = 'all 0.1s ease';
+            });
+        });
+
+        // ═══════════════════════════════════════════
+        // STAT COUNTER ANIMATION
+        // ═══════════════════════════════════════════
+        function easeOutQuart(t) {
+            return 1 - Math.pow(1 - t, 4);
+        }
+
+        function animateCounter(el, target, duration = 2000, suffix = '') {
+            const start = performance.now();
+
+            function update(now) {
+                const elapsed = now - start;
+                const progress = Math.min(elapsed / duration, 1);
+                const eased = easeOutQuart(progress);
+                const current = Math.floor(eased * target);
+                el.textContent = current + suffix;
+
+                if (progress < 1) {
+                    requestAnimationFrame(update);
+                }
+            }
+
+            requestAnimationFrame(update);
+        }
+
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    const count = el.getAttribute('data-count');
+                    const suffix = el.getAttribute('data-suffix') || '';
+
+                    if (count) {
+                        animateCounter(el, parseInt(count), 2000, suffix);
+                    }
+
+                    counterObserver.unobserve(el);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('[data-count]').forEach(el => {
+            counterObserver.observe(el);
+        });
+
+        // ═══════════════════════════════════════════
+        // TICKER DUPLICATION FOR SEAMLESS LOOP
+        // ═══════════════════════════════════════════
+        const tickerTrack = document.getElementById('tickerTrack');
+        if (tickerTrack) {
+            const tickerContent = tickerTrack.innerHTML;
+            tickerTrack.innerHTML = tickerContent + tickerContent;
+        }
+
+        // ═══════════════════════════════════════════
+        // SMOOTH SCROLL FOR ANCHOR LINKS
+        // ═══════════════════════════════════════════
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // ═══════════════════════════════════════════
+        // PARALLAX BACKGROUND GRADIENTS ON SCROLL
+        // ═══════════════════════════════════════════
+        let parallaxTicking = false;
+
+        function updateSectionParallax() {
+            const scrollY = window.scrollY;
+            const hero = document.getElementById('hero');
+            if (hero && scrollY < hero.offsetHeight) {
+                const offset = scrollY * 0.15;
+                hero.style.backgroundPositionY = offset + 'px';
+            }
+            parallaxTicking = false;
+        }
+
+        window.addEventListener('scroll', () => {
+            if (!parallaxTicking) {
+                requestAnimationFrame(updateSectionParallax);
+                parallaxTicking = true;
+            }
+        }, { passive: true });
+
+        // ═══════════════════════════════════════════
+        // OBJECTION ITEMS — PROGRESSIVE REVEAL
+        // ═══════════════════════════════════════════
+        const objectionItems = document.querySelectorAll('.objection-item');
+        const objectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const answer = entry.target.querySelector('.objection-answer');
+                    if (answer) {
+                        const paragraphs = answer.querySelectorAll('p, .answer-highlight');
+                        paragraphs.forEach((p, i) => {
+                            p.style.opacity = '0';
+                            p.style.transform = 'translateY(20px)';
+                            p.style.transition = `opacity 0.6s ease ${0.2 + i * 0.15}s, transform 0.6s ease ${0.2 + i * 0.15}s`;
+                            requestAnimationFrame(() => {
+                                p.style.opacity = '';
+                                p.style.transform = '';
+                            });
+                        });
+                    }
+                    objectionObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.2 });
+
+        objectionItems.forEach(item => {
+            objectionObserver.observe(item);
+        });
+    </script>
+</body>
+</html>
