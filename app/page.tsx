@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Ticker from './components/Ticker';
 import {
   HomeEffects,
   RevenueCalculator,
@@ -10,7 +9,7 @@ import {
 export const metadata: Metadata = {
   title: 'Georgian Restaurant Marketing Agency | Tamada Group — Revenue Strategy & Marketing',
   description:
-    'Tamada Group is the marketing agency built by and for Georgian restaurants in America. Revenue strategy, menu engineering, local SEO, social media, and paid ads — all designed for Georgian cuisine.',
+    'Tamada Group is the marketing agency built by and for Georgian restaurants worldwide. Revenue strategy, menu engineering, local SEO, social media, and paid ads — all designed for Georgian cuisine.',
   keywords:
     'Georgian restaurant marketing, Georgian restaurant consulting, khachapuri restaurant marketing, Georgian food marketing agency, restaurant revenue consultant, supra event marketing',
 };
@@ -19,9 +18,6 @@ export default function HomePage() {
   return (
     <>
       <HomeEffects />
-
-      {/* Georgian Ticker */}
-      <Ticker />
 
       {/* ═══════════════════════════════════════════
            HERO SECTION
@@ -70,12 +66,12 @@ export default function HomePage() {
           <p className="hero-subheadline">
             Most marketing agencies don&apos;t understand Georgian food, Georgian
             culture, or Georgian hospitality. Tamada Group does &mdash; because
-            our founder is Georgian. She built restaurants in Batumi before she
-            built this agency in America.
+            our founder is Georgian. She built restaurants in Georgia before she
+            brought this agency to the world.
           </p>
 
           <p className="hero-body">
-            We&apos;ve helped Georgian restaurants across America generate over
+            We&apos;ve helped Georgian restaurants across the globe generate over
             $10M in combined revenue. From supra dinner marketing to khachapuri
             going viral on TikTok &mdash; we know how to grow your restaurant
             because we know who you are.
@@ -106,7 +102,7 @@ export default function HomePage() {
               </div>
               <div className="hero-proof-text">
                 <strong>20+ Years in Georgian Hospitality</strong>
-                Born in Batumi. Built restaurants in Georgia. Now serving Georgian restaurants in America.
+                Born in Tbilisi. Built restaurants in Georgia. Now serving Georgian restaurants worldwide.
               </div>
             </div>
             <div className="hero-proof-item">
@@ -124,7 +120,7 @@ export default function HomePage() {
               </div>
               <div className="hero-proof-text">
                 <strong>$10M+ Revenue Generated</strong>
-                Across 40+ Georgian restaurant properties in America.
+                Across 15+ Georgian restaurant properties worldwide.
               </div>
             </div>
             <div className="hero-proof-item">
@@ -165,7 +161,7 @@ export default function HomePage() {
             <h2 className="section-headline">
               You Brought Georgian Hospitality
               <br />
-              To America. But America Doesn&apos;t
+              To The World. But The World Doesn&apos;t
               <br />
               Know You Exist Yet.
             </h2>
@@ -177,11 +173,11 @@ export default function HomePage() {
           <div className="agitation-grid">
             <div className="agitation-copy reveal">
               <p>
-                You opened a Georgian restaurant in America because you believe
-                in this food and this culture. You know that when Americans try
+                You opened a Georgian restaurant because you believe
+                in this food and this culture. You know that when people try
                 khachapuri for the first time, they fall in love. You know that
-                a properly hosted supra dinner is unlike anything in American
-                dining. You know that Georgian wine, Georgian hospitality, and
+                a properly hosted supra dinner is unlike anything in the world
+                of dining. You know that Georgian wine, Georgian hospitality, and
                 Georgian cuisine are ready for their moment.
               </p>
 
@@ -201,7 +197,7 @@ export default function HomePage() {
                 the ones booking out their supra dinners, filling tables on
                 Tuesday nights, going viral on TikTok &mdash; they&apos;re not
                 working harder than you. They have the right marketing partner.
-                One that speaks Georgian, thinks Georgian, and markets Georgian.
+                One that understands Georgian food, Georgian culture, and Georgian guests.
               </p>
 
               <p>
@@ -211,14 +207,14 @@ export default function HomePage() {
 
             <div className="stat-blocks">
               <div className="stat-block reveal stagger-1">
-                <div className="stat-number" data-count="40">
+                <div className="stat-number" data-count="15">
                   0
                 </div>
                 <div className="stat-label">Georgian Restaurants</div>
                 <div className="stat-desc">
-                  We&apos;ve worked with over 40 Georgian restaurant properties
-                  across America &mdash; from New York to Los Angeles, Chicago
-                  to Miami.
+                  We&apos;ve worked with over 15 Georgian restaurant properties
+                  across the globe &mdash; from New York to Los Angeles, and
+                  beyond.
                 </div>
               </div>
               <div className="stat-block reveal stagger-2">
@@ -248,11 +244,11 @@ export default function HomePage() {
               style={{ margin: '60px auto' }}
             ></div>
             <p>
-              Georgian food is having its moment in America. The restaurants
+              Georgian food is having its moment worldwide. The restaurants
               that capture that moment will define the category for the next
               decade. The question is whether your restaurant will be one of
               them &mdash; or whether you&apos;ll watch from the sidelines
-              while someone else tells the story of Georgian food to America.
+              while someone else tells the story of Georgian food to the world.
             </p>
           </div>
         </div>
@@ -268,13 +264,13 @@ export default function HomePage() {
           <div className="reveal" style={{ textAlign: 'center' }}>
             <div className="section-label">Proven Results</div>
             <h2 className="section-headline">
-              One Agency. 40+ Georgian Restaurants.
+              One Agency. 15+ Georgian Restaurants.
               <br />
-              $10M+ In Revenue.
+              Millions In Revenue.
             </h2>
             <p className="section-subheadline">
               Not borrowed numbers. Not theoretical projections.
-              <br />Real results from real Georgian restaurants across America.
+              <br />Real results from real Georgian restaurants across the globe.
             </p>
           </div>
 
@@ -287,7 +283,7 @@ export default function HomePage() {
             </div>
             <div className="proof-arrow">&rarr;</div>
             <div className="proof-counter-box">
-              <div className="proof-counter-value" data-count="40">
+              <div className="proof-counter-value" data-count="15">
                 0
               </div>
               <div className="proof-counter-label">Properties Transformed</div>
@@ -296,11 +292,11 @@ export default function HomePage() {
 
           <div className="proof-grid">
             <div className="proof-card reveal stagger-1">
-              <div className="proof-card-number" data-count="40">
+              <div className="proof-card-number" data-count="15">
                 0
               </div>
               <div className="proof-card-label">
-                Georgian restaurant properties across America &mdash; from
+                Georgian restaurant properties across the globe &mdash; from
                 intimate family restaurants to large-format supra dining halls.
               </div>
             </div>
@@ -326,7 +322,7 @@ export default function HomePage() {
               </div>
               <div className="proof-card-label">
                 Years in Georgian hospitality. Not theory. Not borrowed
-                frameworks. Born in Batumi. Built in America.
+                frameworks. Born in Tbilisi. Built for the world.
               </div>
             </div>
           </div>
@@ -378,15 +374,15 @@ export default function HomePage() {
                 She Built Them.
               </h2>
               <p>
-                Lana Chikhladze grew up in Batumi, Georgia &mdash; a port city
-                on the Black Sea where hospitality isn&apos;t just a business,
+                Lana Chikhladze grew up in Tbilisi, Georgia &mdash; the ancient
+                capital where hospitality isn&apos;t just a business,
                 it&apos;s a way of life. She built and managed restaurants,
                 hotels, and nightclubs in Georgia before bringing that
-                experience to America.
+                experience to the world.
               </p>
 
               <p>
-                When she saw Georgian restaurant owners in America struggling
+                When she saw Georgian restaurant owners struggling
                 with generic marketing agencies that didn&apos;t understand
                 their food, their culture, or their guests &mdash; she built
                 Tamada Group. An agency by a Georgian, for Georgians.
@@ -395,13 +391,13 @@ export default function HomePage() {
               <p>
                 With 20+ years of hospitality operations, an MBA in Executive
                 Management, and AI-powered marketing tools, Lana has helped
-                40+ Georgian restaurants across America grow their revenue,
-                fill their tables, and tell their story to the American market.
+                15+ Georgian restaurants worldwide grow their revenue,
+                fill their tables, and tell their story to new markets.
               </p>
 
               <div className="authority-badges">
                 <div className="authority-badge">
-                  Born in Batumi, Georgia
+                  Born in Tbilisi, Georgia
                 </div>
                 <div className="authority-badge">
                   MBA &middot; Executive Management
@@ -600,179 +596,6 @@ export default function HomePage() {
             <Link href="/marketing-services" className="btn-secondary">
               See All Marketing Services
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════
-           AI VIDEO TEASER — GEORGIAN FOOD SPECIFIC
-           ═══════════════════════════════════════════ */}
-      <section className="section video-teaser">
-        <div className="container">
-          <div className="video-teaser-header reveal">
-            <div className="section-label">Georgian Food, Brought To Life</div>
-            <h2 className="section-headline">
-              Imagine Your Khachapuri
-              <br />
-              Going Viral.
-            </h2>
-            <p className="section-subheadline">
-              Cinematic AI video of your signature Georgian dishes &mdash;
-              deployed everywhere your guests already are.
-            </p>
-            <p
-              className="section-body"
-              style={{
-                margin: '20px auto 0',
-                textAlign: 'center',
-                maxWidth: '620px',
-              }}
-            >
-              The cheese pull on a fresh Imeretian khachapuri. Khinkali being
-              folded by hand. A ketsi dish arriving at the table, still
-              sizzling. These are the visuals that stop the scroll on Instagram
-              and TikTok &mdash; and we produce them using AI video technology
-              that turns your dish photography into cinematic motion.
-            </p>
-          </div>
-
-          <div className="video-grid">
-            <div className="video-thumb reveal stagger-1">
-              <img
-                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80&auto=format&fit=crop"
-                alt="Georgian khachapuri - AI video menu preview"
-              />
-              <div className="video-thumb-overlay">
-                <div className="play-btn">
-                  <svg viewBox="0 0 24 24">
-                    <polygon points="8,5 19,12 8,19" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div className="video-thumb reveal stagger-2">
-              <img
-                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80&auto=format&fit=crop"
-                alt="Georgian feast spread - AI video menu preview"
-              />
-              <div className="video-thumb-overlay">
-                <div className="play-btn">
-                  <svg viewBox="0 0 24 24">
-                    <polygon points="8,5 19,12 8,19" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div className="video-thumb reveal stagger-3">
-              <img
-                src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&q=80&auto=format&fit=crop"
-                alt="Georgian wine and table setting - AI video menu preview"
-              />
-              <div className="video-thumb-overlay">
-                <div className="play-btn">
-                  <svg viewBox="0 0 24 24">
-                    <polygon points="8,5 19,12 8,19" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="video-capabilities reveal">
-            <div className="video-cap">
-              <div className="video-cap-icon">&#x1F4F1;</div>
-              <h4>QR Menu Ready</h4>
-              <p>
-                Guests scan and watch your khachapuri come to life before the
-                server arrives. The visual sell does the work.
-              </p>
-            </div>
-            <div className="video-cap">
-              <div className="video-cap-icon">&#x1F3AC;</div>
-              <h4>Social-First Production</h4>
-              <p>
-                Formatted for Instagram Reels and TikTok. Georgian food is
-                what American foodies are discovering right now.
-              </p>
-            </div>
-            <div className="video-cap">
-              <div className="video-cap-icon">&#x1F4CA;</div>
-              <h4>Strategy-Driven Selection</h4>
-              <p>
-                We video the dishes your menu engineering data says matter most
-                &mdash; high-margin, high-impact Georgian specialties.
-              </p>
-            </div>
-          </div>
-
-          <div style={{ textAlign: 'center' }} className="reveal">
-            <Link href="/ai-video-menus" className="btn-primary">
-              Request A Sample Video
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════
-           PROCESS SECTION
-           ═══════════════════════════════════════════ */}
-      <section className="section process-section">
-        <div className="container">
-          <div className="reveal" style={{ textAlign: 'center' }}>
-            <div className="section-label">How It Works</div>
-            <h2 className="section-headline">
-              Four Steps. No Complexity.
-              <br />
-              Just Results.
-            </h2>
-            <p className="section-subheadline">
-              From first conversation to revenue growth &mdash; here&apos;s how
-              we work with Georgian restaurants.
-            </p>
-          </div>
-
-          <div className="process-steps">
-            <div className="process-line">
-              <div className="process-line-fill" id="processLineFill"></div>
-            </div>
-
-            <div className="process-step reveal stagger-1">
-              <div className="process-number">01</div>
-              <h3>We Talk</h3>
-              <p>
-                A 30-minute strategy conversation. Free. No pitch. We learn
-                about your restaurant, your challenges, and where you think the
-                gaps are. You learn whether we&apos;re the right fit.
-              </p>
-            </div>
-            <div className="process-step reveal stagger-2">
-              <div className="process-number">02</div>
-              <h3>We Audit</h3>
-              <p>
-                AI-powered analytics meet 20+ years of Georgian hospitality
-                expertise. We analyze your menu, pricing, events, and marketing
-                &mdash; finding revenue and growth opportunities specific to
-                your Georgian restaurant.
-              </p>
-            </div>
-            <div className="process-step reveal stagger-3">
-              <div className="process-number">03</div>
-              <h3>We Build Your Plan</h3>
-              <p>
-                A custom revenue and marketing roadmap with specific changes,
-                projected impact, and priorities. Revenue strategy first, then
-                marketing engine. Both designed for Georgian restaurants.
-              </p>
-            </div>
-            <div className="process-step reveal stagger-4">
-              <div className="process-number">04</div>
-              <h3>We Execute Together</h3>
-              <p>
-                You focus on your restaurant. We run the marketing. From local
-                SEO to social media to paid ads &mdash; we handle the growth
-                engine while you handle the hospitality.
-              </p>
-            </div>
           </div>
         </div>
       </section>

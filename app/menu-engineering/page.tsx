@@ -5,7 +5,7 @@ import MenuEngineeringEffects from './MenuEngineeringEffects';
 export const metadata: Metadata = {
   title: 'AI Menu Engineering for Restaurants | Increase Average Check | Tamada Group',
   description:
-    'AI menu engineering that increases average check by up to 18%. Same methodology as top restaurant chains. Now available for Georgian restaurants across America.',
+    'AI menu engineering that increases average check by up to 18%. Same methodology as top restaurant chains. Now available for Georgian restaurants worldwide.',
   keywords:
     'menu engineering, Georgian menu engineering, khachapuri menu optimization, restaurant menu design, increase average check, menu psychology, AI menu optimization, Georgian restaurant profit optimization',
 };
@@ -46,7 +46,7 @@ export default function MenuEngineeringPage() {
             </h1>
             <div className="hero-gold-line" />
             <p className="hero-subheadline">Every menu is a sales conversation. Most are saying the wrong things to the wrong people at the wrong price.</p>
-            <p className="hero-body">The same methodology used by chains generating billions in annual revenue is now available to Georgian restaurants across America. AI-powered analysis of your POS data, guest behavior, and menu psychology — positioning your khachapuri as the hero item, guiding guests from khinkali to chakapuli, and translating your menu into a sales instrument.</p>
+            <p className="hero-body">The same methodology used by chains generating billions in annual revenue is now available to Georgian restaurants worldwide. AI-powered analysis of your POS data, guest behavior, and menu psychology — positioning your khachapuri as the hero item, guiding guests from khinkali to chakapuli, and translating your menu into a sales instrument.</p>
             <div className="hero-ctas">
               <Link href="/contact" className="btn-primary">Engineer My Menu</Link>
               <a href="#process" className="btn-secondary">See The Process</a>

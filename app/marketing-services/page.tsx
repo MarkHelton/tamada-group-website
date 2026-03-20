@@ -1,12 +1,11 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Ticker from '../components/Ticker';
 import MarketingServicesEffects from './MarketingServicesEffects';
 
 export const metadata: Metadata = {
   title: 'Georgian Restaurant Marketing Agency | Tamada Group',
   description:
-    'Full-service marketing agency built exclusively for Georgian restaurants in America. Local SEO, social media, paid ads, reputation management, and more.',
+    'Full-service marketing agency built exclusively for Georgian restaurants worldwide. Local SEO, social media, paid ads, reputation management, and more.',
   keywords:
     'Georgian restaurant marketing agency, restaurant marketing agency, F&B marketing agency',
 };
@@ -15,9 +14,6 @@ export default function MarketingServicesPage() {
   return (
     <>
       <MarketingServicesEffects />
-
-      {/* GEORGIAN TICKER */}
-      <Ticker />
 
       {/* ═══════════════════════════════════════════
            HERO SECTION
@@ -51,7 +47,7 @@ export default function MarketingServicesPage() {
           <div className="hero-gold-line" />
 
           <p className="hero-subheadline">
-            A full-service marketing agency built exclusively for Georgian restaurants in America &mdash; by the team that already understands your revenue, your menu, and your guests.
+            A full-service marketing agency built exclusively for Georgian restaurants worldwide &mdash; by the team that already understands your revenue, your menu, and your guests.
           </p>
 
           <div className="hero-ctas">

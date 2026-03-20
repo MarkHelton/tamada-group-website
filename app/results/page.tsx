@@ -1,12 +1,11 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Ticker from '../components/Ticker';
 import ResultsEffects from './ResultsEffects';
 
 export const metadata: Metadata = {
   title: 'Results & Case Studies | Georgian Restaurant Marketing | Tamada Group',
   description:
-    '$10M+ in combined client revenue generated across 40+ Georgian restaurant properties. See the results of Lana Chikhladze\'s 20+ year methodology for Georgian restaurants in America.',
+    '$10M+ in combined client revenue generated across 15+ Georgian restaurant properties. See the results of Lana Chikhladze\'s 20+ year methodology for Georgian restaurants worldwide.',
   keywords:
     'Georgian restaurant results, restaurant consulting case studies, Georgian restaurant marketing results',
 };
@@ -15,11 +14,6 @@ export default function ResultsPage() {
   return (
     <>
       <ResultsEffects />
-
-      {/* ═══════════════════════════════════════════
-           GEORGIAN TICKER
-           ═══════════════════════════════════════════ */}
-      <Ticker />
 
       {/* ═══════════════════════════════════════════
            HERO SECTION
@@ -41,7 +35,7 @@ export default function ResultsPage() {
 
           <div className="about-hero-gold-line"></div>
 
-          <p className="about-hero-subheadline">$10M+ in combined revenue generated. 40+ properties transformed. 20+ years of proof.</p>
+          <p className="about-hero-subheadline">$10M+ in combined revenue generated. 15+ properties transformed. 20+ years of proof.</p>
         </div>
 
         <div className="hero-accent"></div>
@@ -60,7 +54,7 @@ export default function ResultsPage() {
         <div className="proof-overlay"></div>
         <div className="container proof-content">
           <div className="section-label reveal">The Track Record</div>
-          <h2 className="section-headline reveal stagger-2">Two Decades. Forty Properties. One Methodology.</h2>
+          <h2 className="section-headline reveal stagger-2">Two Decades. 15+ Properties. One Methodology.</h2>
 
           <div className="proof-counter-row reveal">
             <div className="proof-counter-box">
@@ -69,7 +63,7 @@ export default function ResultsPage() {
             </div>
             <div className="proof-arrow">&rarr;</div>
             <div className="proof-counter-box">
-              <div className="proof-counter-value" data-count="40" data-suffix="+">0</div>
+              <div className="proof-counter-value" data-count="15" data-suffix="+">0</div>
               <div className="proof-counter-label">Properties Transformed</div>
             </div>
             <div className="proof-arrow">&rarr;</div>
@@ -92,10 +86,10 @@ export default function ResultsPage() {
       <section className="section bio-section">
         <div className="container">
           <div className="bio-copy" style={{ maxWidth: '860px', margin: '0 auto' }}>
-            <div className="section-label reveal stagger-1">Case Study: Georgian Restaurants in America</div>
+            <div className="section-label reveal stagger-1">Case Study: Georgian Restaurants Worldwide</div>
             <h2 className="section-headline reveal stagger-2">How One Methodology Transformed an Entire Cuisine&apos;s Market Position</h2>
 
-            <p className="bio-lead reveal stagger-3">Over 20+ years, Lana Chikhladze has worked with more than 40 Georgian restaurant properties across the United States — building, consulting, managing, and launching concepts from Brooklyn to Los Angeles. The pattern she discovered was consistent: extraordinary food, extraordinary hospitality, and revenue that did not reflect either one.</p>
+            <p className="bio-lead reveal stagger-3">Over 20+ years, Lana Chikhladze has worked with more than 15 Georgian restaurant properties across the globe — building, consulting, managing, and launching concepts from Brooklyn to Los Angeles. The pattern she discovered was consistent: extraordinary food, extraordinary hospitality, and revenue that did not reflect either one.</p>
 
             <div className="section-divider reveal"></div>
 
@@ -107,9 +101,9 @@ export default function ResultsPage() {
 
             <div className="section-divider reveal"></div>
 
-            <h3 className="reveal">Menu Engineering: Making Georgian Food Irresistible to American Markets</h3>
+            <h3 className="reveal">Menu Engineering: Making Georgian Food Irresistible to New Markets</h3>
 
-            <p className="reveal">Khachapuri. Khinkali. Lobio. Churchkhela. Pkhali. These words mean everything to a Georgian — and nothing to the average American diner scanning a menu for 90 seconds. Lana&apos;s menu engineering methodology, applied across 40+ properties, solved this translation problem without diluting authenticity. The approach was surgical: restructure menu descriptions to lead with sensory language and familiar reference points, then follow with the Georgian name. &ldquo;Hand-pulled cheese bread, baked to order with molten sulguni and a farm egg&rdquo; outperforms &ldquo;Adjarian Khachapuri&rdquo; on every metric — orders, satisfaction scores, and social media shares.</p>
+            <p className="reveal">Khachapuri. Khinkali. Lobio. Churchkhela. Pkhali. These words mean everything to a Georgian — and nothing to the average American diner scanning a menu for 90 seconds. Lana&apos;s menu engineering methodology, applied across 15+ properties, solved this translation problem without diluting authenticity. The approach was surgical: restructure menu descriptions to lead with sensory language and familiar reference points, then follow with the Georgian name. &ldquo;Hand-pulled cheese bread, baked to order with molten sulguni and a farm egg&rdquo; outperforms &ldquo;Adjarian Khachapuri&rdquo; on every metric — orders, satisfaction scores, and social media shares.</p>
 
             <p className="reveal">But description was only part of it. Menu architecture — the physical layout, visual hierarchy, price anchoring, and strategic placement of high-margin items — was rebuilt from the economics up. Khinkali, traditionally a low-price-point item, was repositioned as a shareable appetizer experience with tableside preparation storytelling. Adjarian khachapuri was moved from the bread section to a standalone feature position with visual emphasis. Wine-by-the-glass programs were restructured to spotlight Georgian wines at premium price points, with staff trained to tell the 8,000-year winemaking story that justifies every dollar. The measured result: an average 18% increase in check size across all properties where the full menu engineering was implemented.</p>
 
@@ -117,7 +111,7 @@ export default function ResultsPage() {
 
             <h3 className="reveal">Local SEO: Owning &ldquo;Restaurants Near Me&rdquo;</h3>
 
-            <p className="reveal">When Lana began auditing the digital presence of Georgian restaurants across the U.S., the findings were consistent and alarming. Most had incomplete Google Business profiles, zero review response strategy, no local citation building, and websites that were not optimized for any search term — let alone the high-intent &ldquo;restaurants near me&rdquo; queries that drive 70% of new restaurant discovery. Georgian restaurants were invisible in the exact moment a hungry diner was searching.</p>
+            <p className="reveal">When Lana began auditing the digital presence of Georgian restaurants across their markets, the findings were consistent and alarming. Most had incomplete Google Business profiles, zero review response strategy, no local citation building, and websites that were not optimized for any search term — let alone the high-intent &ldquo;restaurants near me&rdquo; queries that drive 70% of new restaurant discovery. Georgian restaurants were invisible in the exact moment a hungry diner was searching.</p>
 
             <p className="reveal">The SEO strategy was built around three pillars: Google Business Profile optimization with complete menus, professional photography, and weekly post updates; a systematic review generation and response protocol that increased average review counts by 300%; and local content strategy that targeted both cuisine-specific terms (&ldquo;Georgian restaurant Brooklyn&rdquo;) and broader discovery terms (&ldquo;best date night restaurant Midtown&rdquo;, &ldquo;unique dining experience near me&rdquo;). Within 90 days, Lana&apos;s client properties consistently moved into the Google Maps 3-pack for their target neighborhoods. Within six months, organic search traffic increased by an average of 180% — translating directly to covers, reservations, and revenue.</p>
 
@@ -125,7 +119,7 @@ export default function ResultsPage() {
 
             <h3 className="reveal">Social Media: Making Georgian Food Go Viral</h3>
 
-            <p className="reveal">Georgian food is inherently visual. The cheese pull of an Adjarian khachapuri. The pleated folds of khinkali. The golden crust of a tone-baked shotis puri. The dramatic pour of amber wine from a clay qvevri. This was content waiting to happen — and almost no Georgian restaurant in America was capturing it. Social media accounts, where they existed, were posting inconsistently with phone photos and no strategic narrative.</p>
+            <p className="reveal">Georgian food is inherently visual. The cheese pull of an Adjarian khachapuri. The pleated folds of khinkali. The golden crust of a tone-baked shotis puri. The dramatic pour of amber wine from a clay qvevri. This was content waiting to happen — and almost no Georgian restaurant was capturing it. Social media accounts, where they existed, were posting inconsistently with phone photos and no strategic narrative.</p>
 
             <p className="reveal">Lana&apos;s social strategy turned Georgian restaurants into content machines. Short-form video content — the bread being pulled from the tone oven, the egg cracked into the khachapuri boat, the first bite of a juicy khinkali — was engineered for the algorithms that reward watch time, saves, and shares. Educational content about Georgia&apos;s 8,000-year wine tradition, the cultural meaning of the supra, and the craftsmanship behind each dish gave American foodies the story they needed to become evangelists. User-generated content programs turned every guest into a potential micro-influencer. The results were dramatic: client restaurants saw follower growth of 400% to 800% within the first year, with social-driven reservations becoming a measurable revenue channel for the first time.</p>
           </div>
@@ -156,7 +150,7 @@ export default function ResultsPage() {
       <section className="section" id="proof-stats">
         <div className="container">
           <div className="section-label reveal">By The Numbers</div>
-          <h2 className="section-headline reveal stagger-2">Specific Results Across 40+ Properties</h2>
+          <h2 className="section-headline reveal stagger-2">Specific Results Across 15+ Properties</h2>
           <p className="section-subheadline reveal stagger-3">Every number below was measured, documented, and repeated across multiple Georgian restaurant operations.</p>
 
           <div className="proof-grid">
@@ -165,8 +159,8 @@ export default function ResultsPage() {
               <div className="proof-card-label">$10M+ in combined client revenue generated across restaurant, lounge, hotel, and event operations over 20+ years.</div>
             </div>
             <div className="proof-card reveal stagger-2">
-              <div className="proof-card-number" data-count="40">0</div>
-              <div className="proof-card-label">Restaurant properties worked with — built, managed, consulted, or launched across the United States.</div>
+              <div className="proof-card-number" data-count="15">0</div>
+              <div className="proof-card-label">Georgian restaurant properties worked with — built, managed, consulted, or launched across the globe.</div>
             </div>
             <div className="proof-card reveal stagger-3">
               <div className="proof-card-number" data-count="30">0</div>

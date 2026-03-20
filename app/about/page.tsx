@@ -1,25 +1,19 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Ticker from '../components/Ticker';
 import AboutEffects from './AboutEffects';
 
 export const metadata: Metadata = {
   title: 'About Lana Chikhladze & Tamada Group | Georgian Restaurant Marketing Agency',
   description:
-    'Meet Lana Chikhladze — born in Batumi, Georgia. 20+ years in hospitality, $10M+ in revenue generated, 40+ restaurant properties. The only marketing agency built by a Georgian for Georgian restaurants in America.',
+    'Meet Lana Chikhladze — born in Tbilisi, Georgia. 20+ years in hospitality, $10M+ in revenue generated, 40+ restaurant properties. The only marketing agency built by a Georgian for Georgian restaurants worldwide.',
   keywords:
-    'Lana Chikhladze, Tamada Group, Georgian restaurant marketing, Georgian restaurants America, Georgian hospitality, supra tradition, Batumi Georgia, restaurant marketing agency, F&B marketing, khachapuri, khinkali, Georgian cuisine',
+    'Lana Chikhladze, Tamada Group, Georgian restaurant marketing, Georgian restaurants worldwide, Georgian hospitality, supra tradition, Tbilisi Georgia, restaurant marketing agency, F&B marketing, khachapuri, khinkali, Georgian cuisine',
 };
 
 export default function AboutPage() {
   return (
     <>
       <AboutEffects />
-
-      {/* ═══════════════════════════════════════════
-           GEORGIAN TICKER
-           ═══════════════════════════════════════════ */}
-      <Ticker />
 
       {/* ═══════════════════════════════════════════
            HERO SECTION
@@ -41,7 +35,7 @@ export default function AboutPage() {
 
           <div className="about-hero-gold-line"></div>
 
-          <p className="about-hero-subheadline">The only marketing agency founded by a Georgian — for Georgian restaurants in America.</p>
+          <p className="about-hero-subheadline">The only marketing agency founded by a Georgian — for Georgian restaurants worldwide.</p>
         </div>
 
         <div className="hero-accent"></div>
@@ -68,11 +62,11 @@ export default function AboutPage() {
               <div className="section-label reveal stagger-1">The Full Story</div>
               <h2 className="reveal stagger-2">Lana Chikhladze</h2>
 
-              <p className="bio-lead reveal stagger-3">Most marketing agencies don&apos;t understand Georgian restaurants. Lana does — because she IS Georgian. Born in Batumi, raised on the Black Sea, with 20+ years building and running restaurants, hotels, and nightlife venues. She didn&apos;t learn Georgian hospitality from a book. She lived it.</p>
+              <p className="bio-lead reveal stagger-3">Most marketing agencies don&apos;t understand Georgian restaurants. Lana does — because she IS Georgian. Born in Tbilisi, raised in the Georgian tradition, with 20+ years building and running restaurants, hotels, and nightlife venues. She didn&apos;t learn Georgian hospitality from a book. She lived it.</p>
 
-              <p className="reveal stagger-4">Lana grew up in Batumi, Georgia — the jewel of the Black Sea coast, where the smell of freshly baked khachapuri drifts through every neighborhood and the supra table is the center of family life. Hospitality was not a career she chose. It was the air she breathed. In Georgia, feeding someone well is not a business — it is a sacred obligation. The way you host, the way you pour wine, the way you make a stranger feel like family — these things define who you are as a person. Lana understood this before she ever stepped foot in a professional kitchen.</p>
+              <p className="reveal stagger-4">Lana grew up in Tbilisi, Georgia — the ancient capital city, where centuries of culture and tradition converge, where the smell of freshly baked khachapuri drifts through every neighborhood and the supra table is the center of family life. Hospitality was not a career she chose. It was the air she breathed. In Georgia, feeding someone well is not a business — it is a sacred obligation. The way you host, the way you pour wine, the way you make a stranger feel like family — these things define who you are as a person. Lana understood this before she ever stepped foot in a professional kitchen.</p>
 
-              <p className="reveal">She started young, working in Batumi&apos;s booming hospitality scene as international tourism transformed the city. Over 20+ years, she built and managed restaurants, boutique hotels, rooftop bars, and nightclubs across Georgia. She launched over 30 nightlife and restaurant concepts. She developed more than 50 food and beverage concepts. She consulted for 40+ restaurant properties. She didn&apos;t just manage these operations — she built them from the ground up, from lease negotiations to menu development to staff training to opening night.</p>
+              <p className="reveal">She started young, working in Tbilisi&apos;s vibrant hospitality scene as international tourism transformed the city. Over 20+ years, she built and managed restaurants, boutique hotels, rooftop bars, and nightclubs across Georgia. She launched over 30 nightlife and restaurant concepts. She developed more than 50 food and beverage concepts. She consulted for 40+ restaurant properties. She didn&apos;t just manage these operations — she built them from the ground up, from lease negotiations to menu development to staff training to opening night.</p>
 
               <p className="reveal">The results speak for themselves: more than $10 million in combined revenue generated across her client portfolio. Not from one lucky property. From dozens of operations, each with its own challenges, its own market, its own personality. Lana learned that every restaurant is different, but the principles of Georgian hospitality — generosity, precision, reading the room, making every guest feel extraordinary — are universal.</p>
 
@@ -90,7 +84,7 @@ export default function AboutPage() {
 
               <p className="reveal">Today, Tamada Group combines Lana&apos;s 20+ years of hands-on restaurant experience with AI-powered marketing tools that amplify everything she knows. The AI didn&apos;t replace her instincts — it supercharged them. Social media strategies that would take weeks to develop now deploy in days. Menu photography direction informed by engagement data. Content calendars built around Georgian holidays, feast days, and cultural moments that generic agencies don&apos;t even know exist. Digital advertising optimized by machine learning but guided by someone who actually understands what she&apos;s advertising.</p>
 
-              <p className="reveal">The combination is unlike anything else in the market: deep Georgian cultural knowledge, two decades of real restaurant operations, an MBA in Executive Management, and AI-powered marketing precision. No other agency has this. No other agency can have this — because no other agency was founded by someone who grew up in Batumi, built restaurants across Georgia, and then dedicated her career to helping Georgian restaurants succeed in America.</p>
+              <p className="reveal">The combination is unlike anything else in the market: deep Georgian cultural knowledge, two decades of real restaurant operations, an MBA in Executive Management, and AI-powered marketing precision. No other agency has this. No other agency can have this — because no other agency was founded by someone who grew up in Tbilisi, built restaurants across Georgia, and then dedicated her career to helping Georgian restaurants succeed worldwide.</p>
 
               <div className="bio-badges reveal">
                 <span className="bio-badge">20+ Years Hospitality</span>
@@ -98,7 +92,7 @@ export default function AboutPage() {
                 <span className="bio-badge">$10M+ Revenue Generated</span>
                 <span className="bio-badge">40+ Properties</span>
                 <span className="bio-badge">50+ F&amp;B Concepts</span>
-                <span className="bio-badge">Born in Batumi, Georgia</span>
+                <span className="bio-badge">Born in Tbilisi, Georgia</span>
               </div>
             </div>
           </div>
@@ -144,7 +138,7 @@ export default function AboutPage() {
               <div className="team-info">
                 <div className="team-name">Lana Chikhladze</div>
                 <div className="team-title">Founder &amp; Lead Strategist</div>
-                <div className="team-subtitle">20+ years hospitality &middot; Born in Batumi, Georgia</div>
+                <div className="team-subtitle">20+ years hospitality &middot; Born in Tbilisi, Georgia</div>
               </div>
             </div>
 
@@ -190,7 +184,7 @@ export default function AboutPage() {
 
           {/* Team photo wide */}
           <div className="team-photo-wide reveal">
-            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80&auto=format&fit=crop" alt="Fine dining Georgian restaurant interior" />
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&q=80&auto=format&fit=crop" alt="Georgian restaurant dining atmosphere" />
             <div className="team-photo-wide-overlay"></div>
           </div>
 
@@ -217,7 +211,7 @@ export default function AboutPage() {
             <div className="value-card reveal stagger-1">
               <span className="value-icon">&#9670;</span>
               <h3>Georgian To The Core</h3>
-              <p>We are not a generic marketing agency that took on a Georgian restaurant client and Googled &quot;khachapuri&quot; the night before the meeting. Lana is Georgian. She grew up in Batumi. She understands the supra, the tamada tradition, the pride behind every handmade khinkali, and the cultural weight of every dish you serve. This agency was built from the inside — by someone who shares your heritage, speaks your language, and understands what your restaurant means to the Georgian community in America.</p>
+              <p>We are not a generic marketing agency that took on a Georgian restaurant client and Googled &quot;khachapuri&quot; the night before the meeting. Lana is Georgian. She grew up in Tbilisi. She understands the supra, the tamada tradition, the pride behind every handmade khinkali, and the cultural weight of every dish you serve. This agency was built from the inside — by someone who shares your heritage, speaks your language, and understands what your restaurant means to the Georgian community in America.</p>
               <p>When we market your restaurant, we don&apos;t flatten your culture into something generic. We amplify what makes it extraordinary.</p>
             </div>
 
@@ -244,7 +238,7 @@ export default function AboutPage() {
       <section className="cta-section">
         <div className="container">
           <h2 className="reveal">Your Restaurant Deserves Better Than A Generic Agency.</h2>
-          <p className="reveal stagger-2">If you own a Georgian restaurant in America, you already know that most marketing agencies don&apos;t get it. They don&apos;t understand your food, your culture, or your customers. Lana does. Let&apos;s talk about how Tamada Group can help your restaurant become what it was always meant to be — the best-known Georgian dining experience in your city. Call 702-766-4304 or book a strategy call below.</p>
+          <p className="reveal stagger-2">If you own a Georgian restaurant, you already know that most marketing agencies don&apos;t get it. They don&apos;t understand your food, your culture, or your customers. Lana does. Let&apos;s talk about how Tamada Group can help your restaurant become what it was always meant to be — the best-known Georgian dining experience in your city. Call 702-766-4304 or book a strategy call below.</p>
           <div className="reveal stagger-3">
             <Link href="/contact" className="btn-primary magnetic-wrap">Book A Strategy Call</Link>
           </div>

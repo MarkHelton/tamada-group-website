@@ -81,6 +81,14 @@ export default function Navigation() {
                 About
               </Link>
             </li>
+            <li>
+              <Link
+                href="/team"
+                className={isActive('/team') ? 'active' : ''}
+              >
+                Team
+              </Link>
+            </li>
             <li
               className="nav-dropdown"
               ref={servicesRef}
@@ -183,6 +191,9 @@ export default function Navigation() {
       <div className={`mobile-overlay${isOpen ? ' open' : ''}`} id="mobileOverlay">
         <Link href="/about" onClick={closeNav}>
           About
+        </Link>
+        <Link href="/team" onClick={closeNav}>
+          Team
         </Link>
 
         <div className="mobile-section-label">Revenue Strategy</div>

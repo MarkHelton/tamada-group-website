@@ -5,6 +5,22 @@ import { useEffect } from 'react';
 export default function AboutEffects() {
   useEffect(() => {
     // ═══════════════════════════════════════════
+    // REVEAL ON SCROLL
+    // ═══════════════════════════════════════════
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15, rootMargin: '0px 0px -80px 0px' }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+
+    // ═══════════════════════════════════════════
     // PARALLAX ELEMENTS ON SCROLL
     // ═══════════════════════════════════════════
     let ticking = false;
@@ -140,6 +156,7 @@ export default function AboutEffects() {
     // CLEANUP
     // ═══════════════════════════════════════════
     return () => {
+      revealObserver.disconnect();
       window.removeEventListener('scroll', onScroll);
 
       if (bioObserver) {

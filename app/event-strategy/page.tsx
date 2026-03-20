@@ -58,13 +58,13 @@ export default function EventStrategyPage() {
         <div className="container">
           <div className="reveal">
             <div className="section-label">The Authority Behind the Strategy</div>
-            <h2 className="section-headline">Born in Batumi, Georgia. Built Restaurants in Georgia.<br />Now Building Supra Events Across America.</h2>
-            <div className="section-subheadline">Government delegations. International corporate conferences. High-stakes cultural events. 20+ years of experience across 40+ Georgian restaurants. Alone. In contexts where failure was not an option.</div>
+            <h2 className="section-headline">Born in Tbilisi, Georgia. Built Restaurants in Georgia.<br />Now Building Supra Events Across the Globe.</h2>
+            <div className="section-subheadline">Government delegations. International corporate conferences. High-stakes cultural events. 20+ years of experience across 15+ Georgian restaurants. Alone. In contexts where failure was not an option.</div>
           </div>
 
           <div className="credibility-grid">
             <div className="credibility-copy reveal stagger-1">
-              <p>Before Tamada Group existed as a consulting firm, Lana Chikhladze &mdash; born in Batumi, Georgia &mdash; spent 20+ years operating at the highest tier of international event execution and Georgian hospitality. She grew up in the supra tradition, where the tamada leads the feast and every toast carries meaning. She managed events for China&rsquo;s Business Council delegations, where every detail carried diplomatic weight and every misstep carried political consequence. These were not cocktail hours. These were multi-day programs involving government officials, corporate leadership, translators, cultural protocols, and security requirements that most event coordinators have never encountered and would not know how to manage.</p>
+              <p>Before Tamada Group existed as a consulting firm, Lana Chikhladze &mdash; born in Tbilisi, Georgia &mdash; spent 20+ years operating at the highest tier of international event execution and Georgian hospitality. She grew up in the supra tradition, where the tamada leads the feast and every toast carries meaning. She managed events for China&rsquo;s Business Council delegations, where every detail carried diplomatic weight and every misstep carried political consequence. These were not cocktail hours. These were multi-day programs involving government officials, corporate leadership, translators, cultural protocols, and security requirements that most event coordinators have never encountered and would not know how to manage.</p>
 
               <p>She executed high-stakes weddings in international resort settings where the guest list included public figures and the budget reflected the kind of scrutiny that comes with it. The flower arrangement is not just a centerpiece when the family has a net worth that exceeds your annual revenue. The wine selection is not a suggestion when the table includes a sommelier from Bordeaux. These details matter in a way that most domestic event teams never face, and Lana delivered on every one of them without a department behind her. She was the department.</p>
 

@@ -67,7 +67,7 @@ export default function RevenueAuditPage() {
                 <div className="hero-proof-icon">$10M+</div>
                 <div className="hero-proof-text">
                   <strong>Revenue Generated</strong>
-                  Across 40+ Georgian restaurants in America.
+                  Across 15+ Georgian restaurants worldwide.
                 </div>
               </div>
               <div className="hero-proof-item">

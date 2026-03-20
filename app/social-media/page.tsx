@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Ticker from '../components/Ticker';
 import SocialMediaEffects from './SocialMediaEffects';
 
 export const metadata: Metadata = {
@@ -15,9 +14,6 @@ export default function SocialMediaPage() {
   return (
     <>
       <SocialMediaEffects />
-
-      {/* GEORGIAN TICKER */}
-      <Ticker />
 
       {/* ═══════════════════════════════════════════
            HERO SECTION
@@ -196,7 +192,7 @@ export default function SocialMediaPage() {
             One social media presence.
           </h2>
           <p className="section-subheadline reveal">
-            Every Georgian restaurant in America serves two distinct audiences &mdash; and your social media needs to speak to both.
+            Every Georgian restaurant serves two distinct audiences &mdash; and your social media needs to speak to both.
           </p>
 
           <div className="services-cards">

@@ -1,12 +1,11 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Ticker from '../components/Ticker';
 import ServicesEffects from './ServicesEffects';
 
 export const metadata: Metadata = {
   title: 'Marketing & Revenue Services for Georgian Restaurants | Tamada Group',
   description:
-    'Full-service marketing agency for Georgian restaurants in America. Revenue strategy, AI menu engineering, supra event planning, local SEO, social media, and paid advertising.',
+    'Full-service marketing agency for Georgian restaurants worldwide. Revenue strategy, AI menu engineering, supra event planning, local SEO, social media, and paid advertising.',
   keywords:
     'Georgian restaurant marketing, restaurant consulting services, F&B revenue audit, AI menu engineering, supra event strategy, local SEO, social media management, paid advertising, Georgian restaurant agency',
 };
@@ -15,9 +14,6 @@ export default function ServicesPage() {
   return (
     <>
       <ServicesEffects />
-
-      {/* GEORGIAN TICKER */}
-      <Ticker />
 
       {/* HERO SECTION */}
       <section className="services-hero" id="hero">
@@ -33,7 +29,7 @@ export default function ServicesPage() {
 
             <div className="services-hero-body">
               <p>
-                Georgian restaurants in America face a unique challenge: you are
+                Georgian restaurants face a unique challenge: you are
                 serving one of the world&apos;s greatest cuisines to an audience
                 that is still discovering it. That means your marketing has to do
                 more than promote — it has to educate, entice, and convert. But
@@ -91,10 +87,10 @@ export default function ServicesPage() {
             <div className="proof-bar-item">
               <div
                 className="proof-bar-value"
-                data-count="40"
+                data-count="15"
                 data-suffix="+"
               >
-                40+
+                15+
               </div>
               <div className="proof-bar-label">Properties Transformed</div>
             </div>
@@ -241,7 +237,7 @@ export default function ServicesPage() {
                   powerful event formats in the restaurant industry. A tamada
                   leading toasts, communal feasting, wine flowing from a kantsi.
                   No other cuisine offers this kind of built-in theatrical
-                  experience. But most Georgian restaurants in America treat
+                  experience. But most Georgian restaurants treat
                   private events as one-off requests that get handled when they
                   come in. That is not a strategy. That is order-taking.
                 </p>
@@ -548,8 +544,8 @@ export default function ServicesPage() {
               <div className="service-card-desc">
                 <p>
                   Georgian culture is rich, ancient, and deeply compelling — but
-                  most Georgian restaurants in America have not translated that
-                  heritage into a cohesive brand that resonates with American
+                  most Georgian restaurants have not translated that
+                  heritage into a cohesive brand that resonates with new
                   diners. We develop brand identities, messaging frameworks, and
                   visual systems that honor your Georgian roots while making your
                   restaurant feel essential to your local community.
@@ -767,7 +763,7 @@ export default function ServicesPage() {
                 <p>
                   This is the right question to ask, and the answer is what makes
                   us different. Tamada Group exists for one reason: Georgian
-                  restaurants in America deserve an agency that understands both
+                  restaurants worldwide deserve an agency that understands both
                   the cuisine and the business. We know that a supra dinner is
                   not just &ldquo;private dining&rdquo; — it is a cultural
                   experience that can command premium pricing when positioned
@@ -816,7 +812,7 @@ export default function ServicesPage() {
             </div>
             <div className="proof-bar-divider"></div>
             <div className="proof-bar-item">
-              <div className="proof-bar-value">40+</div>
+              <div className="proof-bar-value">15+</div>
               <div className="proof-bar-label">Properties Transformed</div>
             </div>
           </div>

@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Ticker from '../components/Ticker';
 import { ContactForm } from '../components/HomeEffects';
 import ContactEffects from './ContactEffects';
 
@@ -16,11 +15,6 @@ export default function ContactPage() {
   return (
     <>
       <ContactEffects />
-
-      {/* ═══════════════════════════════════════════
-           GEORGIAN TICKER
-           ═══════════════════════════════════════════ */}
-      <Ticker />
 
       {/* ═══════════════════════════════════════════
            HERO SECTION

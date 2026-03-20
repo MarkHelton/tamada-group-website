@@ -2,8 +2,58 @@
 
 import { useEffect } from 'react';
 
+function animateAiCounter(el: HTMLElement, target: number, duration = 2000, prefix = '') {
+  const start = performance.now();
+  function update(now: number) {
+    const elapsed = now - start;
+    const progress = Math.min(elapsed / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 4);
+    const current = Math.floor(eased * target);
+    el.textContent = prefix === '$' ? '$' + current.toLocaleString() : prefix + current;
+    if (progress < 1) requestAnimationFrame(update);
+  }
+  requestAnimationFrame(update);
+}
+
 export default function AiVideoMenusEffects() {
   useEffect(() => {
+    // =============================================
+    // REVEAL ON SCROLL
+    // =============================================
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15, rootMargin: '0px 0px -80px 0px' }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+
+    // Counter animations
+    const counterObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const el = entry.target as HTMLElement;
+            const count = el.getAttribute('data-count');
+            const target = el.getAttribute('data-target');
+            if (target) {
+              animateAiCounter(el, parseInt(target), 2500, '$');
+            } else if (count) {
+              animateAiCounter(el, parseInt(count), 2000);
+            }
+            counterObserver.unobserve(el);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+    document.querySelectorAll('[data-count], [data-target]').forEach((el) => counterObserver.observe(el));
+
     // =============================================
     // PARALLAX HERO BACKGROUND
     // =============================================
@@ -136,6 +186,8 @@ export default function AiVideoMenusEffects() {
     // CLEANUP
     // =============================================
     return () => {
+      revealObserver.disconnect();
+      counterObserver.disconnect();
       window.removeEventListener('scroll', onScrollParallax);
 
       if (processObserver) {

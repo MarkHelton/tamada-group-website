@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Ticker from '../components/Ticker';
 import LocalSeoEffects from './LocalSeoEffects';
 
 export const metadata: Metadata = {
@@ -15,9 +14,6 @@ export default function LocalSeoPage() {
   return (
     <>
       <LocalSeoEffects />
-
-      {/* GEORGIAN TICKER */}
-      <Ticker />
 
       {/* ═══════════════════════════════════════════
            HERO SECTION
@@ -243,7 +239,7 @@ export default function LocalSeoPage() {
               In most neighborhoods, you are the only Georgian restaurant. In most cities, there are fewer than five. That means with proper optimization, you can dominate local search results at a fraction of the cost &mdash; and capture every single person searching for your cuisine.
             </p>
             <p className="section-subheadline" style={{ textAlign: 'left' }}>
-              But the window is closing. As Georgian cuisine grows in popularity across America, more restaurants are opening. The operators who invest in local SEO now will lock in their position before the competition arrives.
+              But the window is closing. As Georgian cuisine grows in popularity across the globe, more restaurants are opening. The operators who invest in local SEO now will lock in their position before the competition arrives.
             </p>
           </div>
         </div>

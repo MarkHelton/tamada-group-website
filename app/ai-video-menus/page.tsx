@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Ticker from '../components/Ticker';
 import AiVideoMenusEffects from './AiVideoMenusEffects';
 
 export const metadata: Metadata = {
@@ -16,11 +15,6 @@ export default function AiVideoMenusPage() {
   return (
     <>
       <AiVideoMenusEffects />
-
-      {/* =============================================
-           TICKER
-           ============================================= */}
-      <Ticker />
 
       {/* =============================================
            HERO SECTION
@@ -315,7 +309,7 @@ export default function AiVideoMenusPage() {
           <div className="video-grid">
             <div className="video-thumb reveal stagger-1">
               <img
-                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1548940740-204726a19be3?w=600&q=80&auto=format&fit=crop"
                 alt="Georgian khachapuri with melted cheese — AI video menu sample"
                 loading="lazy"
               />

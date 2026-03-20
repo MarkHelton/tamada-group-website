@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Ticker from '../components/Ticker';
 import PaidAdvertisingEffects from './PaidAdvertisingEffects';
 
 export const metadata: Metadata = {
@@ -15,9 +14,6 @@ export default function PaidAdvertisingPage() {
   return (
     <>
       <PaidAdvertisingEffects />
-
-      {/* GEORGIAN TICKER */}
-      <Ticker />
 
       {/* ═══════════════════════════════════════════
            HERO SECTION

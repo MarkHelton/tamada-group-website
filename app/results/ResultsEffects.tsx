@@ -33,7 +33,7 @@ export default function ResultsEffects() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('revealed');
+            entry.target.classList.add('visible');
             revealObserver.unobserve(entry.target);
           }
         });
